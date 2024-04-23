@@ -1,2 +1,2 @@
 # obidosLagoon
-A game about Óbidos Lagoon
+A game about the Óbidos Lagoon
