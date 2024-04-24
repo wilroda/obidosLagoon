@@ -52,7 +52,7 @@ A game about the Óbidos Lagoon
 
 **Animations:**
 - Using scripted tweens that can be added to objects and parameterized.
-- Idle Animation (was quickly done but can probably me more streamlined)
+- Idle Animation (was quickly done but can probably be more streamlined)
     - Parameters:
         - Animation Speed
         - Time Between Scale Interval
