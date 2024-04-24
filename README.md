@@ -71,4 +71,7 @@ A game about the Óbidos Lagoon
 - Menu Music
 - Menu Clicks
 
-  
+**Assets:**
+- Organize asset list
+- Setup easy to use prefabs from the current asset list
+- Add human characters
