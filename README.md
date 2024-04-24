@@ -16,6 +16,7 @@ A game about the Óbidos Lagoon
     - Find Object - Logic that triggers when and object is supposed to be found and count towards the quest objectives. Done but probably needs to be reworked to play nicely with a more systematic approach?
             - Parameters to add:
                 - Secret - objects that can be found but aren't necesseary to completet he mission.
+      
     - Dialogue
         - On click a speech bubble appears and stays visible for some time.
             - Parameters:
@@ -24,6 +25,7 @@ A game about the Óbidos Lagoon
                 - Time it says visible
                 - POLISH/NICE TO HAVE - Speech bubble pop uup/down animation
                 - POLISH/NICE TO HAVE - Speech appears word by word
+             
     - Movement:
         - On click the object starts/stops moving, on a pre-determined path (waypoints or bezier curves?)
         - Parameters:
@@ -36,27 +38,29 @@ A game about the Óbidos Lagoon
                 - POLISH/NICE TO HAVE:
                     - Waypoints - list of waypoints
                     - Randomly - go forward and change direction from time to time
+  
     - Trigger Another Object's Actions:
         - For example, you click on a tree or a rock, and out comes moving a hidden animal.
         - Parameters:
             - GameObject with actions
+         
 **UI:**
-    - Mouse over interactable objects, makes the cursor change;
-    - Mission Accomplished Menu 
-    - Start Menu
-    - Level Selection Menu
+- Mouse over interactable objects, makes the cursor change;
+- Mission Accomplished Menu 
+- Start Menu
+- Level Selection Menu
 
 **Animations:**
 - Using scripted tweens that can be added to objects and parameterized.
-- Idle Animation 
-- Parameters (this can probably me more streamlined):
-    - Animation Speed
-    - Time Between Scale Interval
-    - Min Scale
-    - Max Scale
-    - Time Between Rotate Interval
-    - Min Rotation
-    - Max Rotation
+- Idle Animation (was quickly done but can probably me more streamlined)
+    - Parameters:
+        - Animation Speed
+        - Time Between Scale Interval
+        - Min Scale
+        - Max Scale
+        - Time Between Rotate Interval
+        - Min Rotation
+        - Max Rotation
 
 **Sound:**
 - Level ambient sounds
