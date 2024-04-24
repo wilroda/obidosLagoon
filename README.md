@@ -6,8 +6,8 @@ A game about the Óbidos Lagoon
 **- Level structure**
     - A scriptable object that contains the objects/animals to be found
     - Data to be retrieved from this structure:
-      - How many things to find to complete a levelm, to populate the quest log or other UI thingies.
-      - The name of those things to populate the quest log.
+        - How many things to find to complete a level, to populate the quest log or other UI thingies.
+        - The name of those things to populate the quest log.
     
 **- Object Click Actions:**
   - Modular system where each action is a sperate script that can be added to an object, this way objects can have various actions fire at the same time. For example I click on an animal to "find" it and at the same time it displays some dialogue.
