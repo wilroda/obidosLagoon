@@ -14,8 +14,8 @@ A game about the Óbidos Lagoon
 
 - Actions:
     - Find Object - Logic that triggers when and object is supposed to be found and count towards the quest objectives. Done but probably needs to be reworked to play nicely with a more systematic approach?
-            - Parameters to add:
-                - Secret - objects that can be found but aren't necesseary to completet he mission.
+        - Parameters to add:
+            - Secret - objects that can be found but aren't necesseary to completet he mission.
       
     - Dialogue
         - On click a speech bubble appears and stays visible for some time.
