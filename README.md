@@ -9,6 +9,10 @@ A game about the Óbidos Lagoon
         - How many things to find to complete a level, to populate the quest log or other UI thingies.
         - The name of those things to populate the quest log.
     
+**State sytem**
+
+Objects can have a state, and state can be changed in simple ways (integer variables)
+
 **Object Click Actions:**
 - Modular system where each action is a sperate script that can be added to an object, this way objects can have various actions fire at the same time. For example I click on an animal to "find" it and at the same time it displays some dialogue.
 
@@ -38,11 +42,13 @@ A game about the Óbidos Lagoon
                 - POLISH/NICE TO HAVE:
                     - Waypoints - list of waypoints
                     - Randomly - go forward and change direction from time to time
-  
+
     - Trigger Another Object's Actions:
         - For example, you click on a tree or a rock, and out comes moving a hidden animal.
         - Parameters:
             - GameObject with actions
+
+    - Go to another scene
          
 **UI:**
 - Mouse over interactable objects, makes the cursor change;

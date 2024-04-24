@@ -10,10 +10,8 @@ public class Binoculars : MonoBehaviour
     public RectTransform binocularView; // Raw Image object where the camera is going to be rendered;
     public RectTransform binocularMask; // UI Image overlay with binoculars shape;
 
-    float widthMargin = 300f;
-    public float binocularWidth = 300f;
-    float heightMargin;
-    public float binocularHeight = 190f;
+    public float widthMargin = 300f;
+    public float heightMargin = 300;
 
     public bool usingBinoculars = false;
     bool usingZoom = false;
@@ -29,8 +27,6 @@ public class Binoculars : MonoBehaviour
     void Start()
     {
         zoomSize = binocularCamera.orthographicSize;
-        heightMargin = Screen.height - binocularHeight;
-        widthMargin = Screen.width - binocularWidth;
     }
 
     void Update()
@@ -48,25 +44,8 @@ public class Binoculars : MonoBehaviour
         mousePos.z = Camera.main.nearClipPlane;
         // Cursor.visible = false;
 
-        if(mousePos.x < binocularWidth)
-        {
-            mousePos.x = binocularWidth;
-        }
-
-        if(mousePos.x > widthMargin)
-        {
-            mousePos.x = widthMargin;
-        }
-
-        if(mousePos.y > heightMargin)
-        {
-            mousePos.y = heightMargin;
-        }
-
-        if(mousePos.y < binocularHeight)
-        {
-            mousePos.y = binocularHeight;
-        }
+        mousePos.x = Mathf.Clamp(mousePos.x, widthMargin, Screen.width - widthMargin);
+        mousePos.y = Mathf.Clamp(mousePos.y, heightMargin, Screen.height - heightMargin);
 
         worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
 
