@@ -12,8 +12,8 @@ A game about the Óbidos Lagoon
 **Object Click Actions:**
 - Modular system where each action is a sperate script that can be added to an object, this way objects can have various actions fire at the same time. For example I click on an animal to "find" it and at the same time it displays some dialogue.
 
-    - Actions:
-        - Find Object - Logic that triggers when and object is supposed to be found and count towards the quest objectives. Done but probably needs to be reworked to play nicely with a more systematic approach?
+- Actions:
+    - Find Object - Logic that triggers when and object is supposed to be found and count towards the quest objectives. Done but probably needs to be reworked to play nicely with a more systematic approach?
             - Parameters to add:
                 - Secret - objects that can be found but aren't necesseary to completet he mission.
     - Dialogue
