@@ -25,8 +25,22 @@ public class InteractionManager : MonoBehaviour
 
             foreach (var h in hits)
             {
-                // Check if object is interactable
-                Debug.Log($"Found {h.collider.name}");
+                // Check if object has actions
+                var actions = h.collider.GetComponents<Action>();
+                if (actions.Length > 0)
+                {
+                    foreach (var action in actions)
+                    {
+                        action.Run();
+                    }
+                }
+                else
+                {
+                    // No actions, might want to do something here (play a sound or something)
+                }
+
+                // Don't check anymore objects (they're hidden behind this one)
+                break;
             }
         }
     }
