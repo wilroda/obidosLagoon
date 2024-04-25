@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 19944661}
   - component: {fileID: 19944660}
   m_Layer: 0
-  m_Name: Button Panel
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2853,7 +2853,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799821072}
+      - m_Target: {fileID: 1312489631}
         m_TargetAssemblyTypeName: Binoculars, Assembly-CSharp
         m_MethodName: BinocularsViewOn
         m_Mode: 1
@@ -8727,9 +8727,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2085620167}
+      - m_Target: {fileID: 1312489630}
         m_TargetAssemblyTypeName: RotateSmoothly, Assembly-CSharp
-        m_MethodName: RotateRight
+        m_MethodName: RotateLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8777,58 +8777,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794319505}
   m_CullTransparentMesh: 1
---- !u!1 &799821071
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 799821073}
-  - component: {fileID: 799821072}
-  m_Layer: 0
-  m_Name: Binocular View
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &799821072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799821071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7cc64c178f05ef4eaec9bdc50092919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  binocularCamera: {fileID: 1382816540}
-  binocularsCanvas: {fileID: 318213829}
-  binocularView: {fileID: 1365513738}
-  binocularMask: {fileID: 146411766}
-  widthMarginPercentage: 0.1
-  heightMarginPercentage: 0.1
-  ButtonsUI: {fileID: 19944659}
-  QuestUI: {fileID: 1043802447}
---- !u!4 &799821073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799821071}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816798828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -12868,9 +12816,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1312489627}
+  - component: {fileID: 1312489631}
+  - component: {fileID: 1312489630}
   - component: {fileID: 1312489626}
+  - component: {fileID: 1312489628}
+  - component: {fileID: 1312489629}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: AreaManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12906,6 +12858,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1312489628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312489625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30f6d97fdcaffa40bd2878a7dad6538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
+--- !u!114 &1312489629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312489625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed24872ae718f37409b5612710572fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1312489630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312489625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae98cc56dccb941aae46500e7725bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 2.5
+  rootObject: {fileID: 1598756632}
+--- !u!114 &1312489631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312489625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cc64c178f05ef4eaec9bdc50092919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  binocularCamera: {fileID: 1382816540}
+  binocularsCanvas: {fileID: 318213829}
+  binocularView: {fileID: 1365513738}
+  binocularMask: {fileID: 146411766}
+  widthMarginPercentage: 0.1
+  heightMarginPercentage: 0.1
+  ButtonsUI: {fileID: 19944659}
+  QuestUI: {fileID: 1043802447}
 --- !u!1 &1334146828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -17043,9 +17054,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2085620167}
+      - m_Target: {fileID: 1312489630}
         m_TargetAssemblyTypeName: RotateSmoothly, Assembly-CSharp
-        m_MethodName: RotateLeft
+        m_MethodName: RotateRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18981,7 +18992,6 @@ GameObject:
   - component: {fileID: 2085620165}
   - component: {fileID: 2085620164}
   - component: {fileID: 2085620163}
-  - component: {fileID: 2085620167}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -19077,20 +19087,6 @@ Transform:
   - {fileID: 3415840159353875406}
   m_Father: {fileID: 1598756632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2085620167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085620162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ae98cc56dccb941aae46500e7725bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  binoculars: {fileID: 799821072}
-  rotationSpeed: 2.5
 --- !u!1 &2089037944 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -19900,6 +19896,7 @@ GameObject:
   - component: {fileID: 7746514234045911897}
   - component: {fileID: 7746514234045911899}
   - component: {fileID: 7746514234045911900}
+  - component: {fileID: 7746514234045911901}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Animal
@@ -20022,6 +20019,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf21447cc048f0c468814ff3c1e74f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7746514234045911901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567077238389506983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7dfcaf54d2f44d91495b535527f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
 --- !u!1 &8337647658470858064
 GameObject:
   m_ObjectHideFlags: 0
@@ -24659,5 +24672,4 @@ SceneRoots:
   - {fileID: 248856661}
   - {fileID: 318213829}
   - {fileID: 76126414}
-  - {fileID: 799821073}
   - {fileID: 1312489627}

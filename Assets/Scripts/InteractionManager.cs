@@ -31,7 +31,10 @@ public class InteractionManager : MonoBehaviour
                 {
                     foreach (var action in actions)
                     {
-                        action.Run();
+                        if (action.enabled)
+                        {
+                            action.Run();
+                        }
                     }
                 }
                 else

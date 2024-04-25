@@ -5,9 +5,17 @@ using UnityEngine;
 
 public class RotateSmoothly : MonoBehaviour
 {
-    public Binoculars binoculars;
-    public float rotationSpeed = 1.0f;
-    private bool isRotating = false;
+    [SerializeField] private float      rotationSpeed = 1.0f;
+    [SerializeField] private Transform  rootObject = null;
+
+    private Binoculars  binoculars;
+    private bool        isRotating = false;
+
+
+    private void Start()
+    {
+        binoculars = FindObjectOfType<Binoculars>();
+    }
 
     void Update()
     {
@@ -41,14 +49,14 @@ public class RotateSmoothly : MonoBehaviour
     IEnumerator RotateY(float angle)
     {
         isRotating = true;
-        Quaternion startRotation = transform.rotation;
+        Quaternion startRotation = rootObject.rotation;
         Quaternion endRotation = Quaternion.Euler(0, angle, 0) * startRotation;
         float t = 0.0f;
 
         while (t < 1.0f)
         {
             t += Time.deltaTime * rotationSpeed;
-            transform.rotation = Quaternion.Slerp(startRotation, endRotation, t);
+            rootObject.rotation = Quaternion.Slerp(startRotation, endRotation, t);
             yield return null;
         }
 
