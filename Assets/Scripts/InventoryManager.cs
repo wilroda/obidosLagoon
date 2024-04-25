@@ -15,7 +15,7 @@ public class InventoryManager : MonoBehaviour
         {
             instance = this;
         }
-        else
+        else if (instance != this)
         {
             Destroy(gameObject);
         }
@@ -28,21 +28,29 @@ public class InventoryManager : MonoBehaviour
 
     public static void AddToken(Token token)
     {
+        if (instance == null) instance = GameObject.FindObjectOfType<InventoryManager>();
+
         instance.inventory.Add(token);
     }
 
     public static void RemoveToken(Token token)
     {
+        if (instance == null) instance = GameObject.FindObjectOfType<InventoryManager>();
+
         instance.inventory.Remove(token);
     }
 
     public static bool HasToken(Token token)
     {
+        if (instance == null) instance = GameObject.FindObjectOfType<InventoryManager>();
+
         return (instance.inventory.IndexOf(token) != -1);
     }
 
     public static int Count(Token token)
     {
+        if (instance == null) instance = GameObject.FindObjectOfType<InventoryManager>();
+
         int count = 0;
 
         foreach (var t in instance.inventory)

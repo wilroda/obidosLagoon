@@ -13,27 +13,9 @@ public class Token : ScriptableObject
         {
             if (_displayName == "") 
             {
-                _displayName = BuildDisplayName(name);
+                _displayName = Helpers.BuildDisplayName(name);
             }
             return _displayName;
         }
-    }
-
-    string BuildDisplayName(string originalName)
-    {
-        string ret = "";
-
-        for (int i = 0; i < originalName.Length; i++)
-        {
-            var c = originalName[i];
-            if (char.IsUpper(c) && (i > 0))
-            {
-                ret += " " + char.IsUpper(originalName[i]);
-            }
-            else if (c == '_') ret += " ";
-            else ret += c;
-        }
-
-        return ret;
     }
 }

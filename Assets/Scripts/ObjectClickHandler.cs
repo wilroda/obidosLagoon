@@ -81,6 +81,8 @@ public class ObjectClickHandler : MonoBehaviour
 
     void QuestMessage(string objectName)
     {
+        if (questText == null) return;
+
         // Set the message text
         questText.text += "\n" + "Found the " + objectName;
     }
