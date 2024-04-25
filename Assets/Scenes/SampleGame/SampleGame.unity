@@ -684,27 +684,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
   m_PrefabInstance: {fileID: 38874779}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &39643915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148962758198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790ed5afa9f986e49a8f5548f45ad5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 264508036}
-  questText: {fileID: 0}
-  messagePanel: {fileID: 2008474446}
-  messageDuration: 2
-  tagToCount: Animal
-  rayDistance: 1000
-  layerMaskToIgnore:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1001 &40042348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2788,8 +2767,9 @@ GameObject:
   m_Component:
   - component: {fileID: 304758007}
   - component: {fileID: 304758009}
-  - component: {fileID: 304758008}
   - component: {fileID: 304758010}
+  - component: {fileID: 304758011}
+  - component: {fileID: 304758012}
   m_Layer: 0
   m_Name: Pigeon
   m_TagString: Animal
@@ -2813,27 +2793,6 @@ Transform:
   - {fileID: 877011137}
   m_Father: {fileID: 3415840159353875406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &304758008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304758006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790ed5afa9f986e49a8f5548f45ad5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 264508036}
-  questText: {fileID: 0}
-  messagePanel: {fileID: 2008474446}
-  messageDuration: 2
-  tagToCount: Animal
-  rayDistance: 1000
-  layerMaskToIgnore:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!65 &304758009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2874,6 +2833,44 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 0.2
   minRotation: -5
   maxRotation: 5
+--- !u!114 &304758011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304758006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7dfcaf54d2f44d91495b535527f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  extraTokens: []
+--- !u!114 &304758012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304758006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  who: {fileID: 0}
+  text: You found the pigeon!
+  bgColor: {r: 1, g: 1, b: 1, a: 1}
+  fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
+  duration: 4
+  offsetY: 0.1
 --- !u!1 &308582710
 GameObject:
   m_ObjectHideFlags: 0
@@ -10490,7 +10487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206189750714121008, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1054
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 206189750714121008, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10514,7 +10511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206189750714121008, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24.81
+      value: -24.810059
       objectReference: {fileID: 0}
     - target: {fileID: 206189750714121008, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10542,7 +10539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801405183830683750, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 430
       objectReference: {fileID: 0}
     - target: {fileID: 2801405183830683750, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_SizeDelta.y
@@ -10550,7 +10547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801405183830683750, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 247
       objectReference: {fileID: 0}
     - target: {fileID: 2801405183830683750, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10586,6 +10583,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 206189750714121008, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
   m_PrefabInstance: {fileID: 957260365}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &957260368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2861088922120903833, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
+  m_PrefabInstance: {fileID: 957260365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171676a492c6f6d4d938a0ca06aa29d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -17156,7 +17164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1890432443
@@ -17172,7 +17180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
-  narratorBubble: {fileID: 0}
+  narratorBubble: {fileID: 957260368}
   speechBubblePrefab: {fileID: 2861088922120903833, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
 --- !u!225 &1890432444
 CanvasGroup:
@@ -19663,8 +19671,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2331896287788383022}
   - component: {fileID: 2331896287788383024}
-  - component: {fileID: 2331896287788383023}
   - component: {fileID: 2331896287788383025}
+  - component: {fileID: 2331896287788383026}
+  - component: {fileID: 2331896287788383027}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Animal
@@ -19849,7 +19858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6887134091747317314, guid: fa14540767ec59448877a7b5af696004, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6887134091747317314, guid: fa14540767ec59448877a7b5af696004, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -19897,8 +19906,9 @@ GameObject:
   - component: {fileID: 3469287836600916778}
   - component: {fileID: 3469287836600916777}
   - component: {fileID: 1711813856096858083}
-  - component: {fileID: 39643915}
   - component: {fileID: 3469287836600916779}
+  - component: {fileID: 3469287836600916780}
+  - component: {fileID: 3469287836600916781}
   m_Layer: 0
   m_Name: Flamingo
   m_TagString: Animal
@@ -20021,27 +20031,6 @@ Transform:
   - {fileID: 3629601072189916200}
   m_Father: {fileID: 3415840159353875406}
   m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
---- !u!114 &2331896287788383023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190805778044525125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790ed5afa9f986e49a8f5548f45ad5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 264508036}
-  questText: {fileID: 0}
-  messagePanel: {fileID: 2008474446}
-  messageDuration: 2
-  tagToCount: Animal
-  rayDistance: 1000
-  layerMaskToIgnore:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!65 &2331896287788383024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20082,6 +20071,44 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 0.2
   minRotation: -5
   maxRotation: 5
+--- !u!114 &2331896287788383026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190805778044525125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7dfcaf54d2f44d91495b535527f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  extraTokens: []
+--- !u!114 &2331896287788383027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190805778044525125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  who: {fileID: 0}
+  text: You found the horse!
+  bgColor: {r: 1, g: 1, b: 1, a: 1}
+  fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
+  duration: 4
+  offsetY: 0.1
 --- !u!1 &2606546427563569524
 GameObject:
   m_ObjectHideFlags: 0
@@ -20167,6 +20194,44 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 0.2
   minRotation: -5
   maxRotation: 5
+--- !u!114 &3469287836600916780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148962758198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7dfcaf54d2f44d91495b535527f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  extraTokens: []
+--- !u!114 &3469287836600916781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148962758198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  who: {fileID: 0}
+  text: You found the flamingo!
+  bgColor: {r: 1, g: 1, b: 1, a: 1}
+  fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
+  duration: 4
+  offsetY: 0.1
 --- !u!33 &3548083678717213830
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20200,8 +20265,9 @@ GameObject:
   m_Component:
   - component: {fileID: 177277580457145710}
   - component: {fileID: 4236636647047003692}
-  - component: {fileID: 4236636647047003691}
   - component: {fileID: 4236636647047003693}
+  - component: {fileID: 4236636647047003694}
+  - component: {fileID: 4236636647047003695}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Animal
@@ -20209,27 +20275,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4236636647047003691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4236636647047003690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790ed5afa9f986e49a8f5548f45ad5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 264508036}
-  questText: {fileID: 0}
-  messagePanel: {fileID: 2008474446}
-  messageDuration: 2
-  tagToCount: Animal
-  rayDistance: 1000
-  layerMaskToIgnore:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!65 &4236636647047003692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20270,6 +20315,44 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 0.2
   minRotation: -5
   maxRotation: 5
+--- !u!114 &4236636647047003694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236636647047003690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7dfcaf54d2f44d91495b535527f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  extraTokens: []
+--- !u!114 &4236636647047003695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236636647047003690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  who: {fileID: 0}
+  text: You found the duck!
+  bgColor: {r: 1, g: 1, b: 1, a: 1}
+  fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
+  duration: 4
+  offsetY: 0.1
 --- !u!33 &4959151414723400287
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20288,8 +20371,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8446141424163314467}
   - component: {fileID: 8446141424163314469}
-  - component: {fileID: 8446141424163314468}
   - component: {fileID: 8446141424163314470}
+  - component: {fileID: 8446141424163314471}
+  - component: {fileID: 8446141424163314472}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Animal
@@ -20336,11 +20420,10 @@ GameObject:
   - component: {fileID: 7746514234045911898}
   - component: {fileID: 5249954004145413270}
   - component: {fileID: 7746514234045911896}
-  - component: {fileID: 7746514234045911897}
   - component: {fileID: 7746514234045911899}
   - component: {fileID: 7746514234045911900}
-  - component: {fileID: 7746514234045911901}
   - component: {fileID: 7746514234045911902}
+  - component: {fileID: 7746514234045911901}
   - component: {fileID: 7746514234045911903}
   m_Layer: 0
   m_Name: Frog
@@ -20391,27 +20474,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7746514234045911897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6567077238389506983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790ed5afa9f986e49a8f5548f45ad5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 264508036}
-  questText: {fileID: 0}
-  messagePanel: {fileID: 2008474446}
-  messageDuration: 2
-  tagToCount: Animal
-  rayDistance: 1000
-  layerMaskToIgnore:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!65 &7746514234045911898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20497,7 +20559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 1
   requiredTokens:
-  - {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   forbiddenTokens: []
   who: {fileID: 1994333226835225066}
   text: Ribbit! Ribbit!
@@ -20520,12 +20582,12 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens:
-  - {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   who: {fileID: 0}
   text: You found the frog!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
-  fgColor: {r: 0, g: 0, b: 0, a: 1}
-  duration: 2
+  fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
+  duration: 4
   offsetY: 0.1
 --- !u!1 &8337647658470858064
 GameObject:
@@ -20561,27 +20623,6 @@ Transform:
   - {fileID: 8917455238568687804}
   m_Father: {fileID: 3415840159353875406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8446141424163314468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5032867251989032178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790ed5afa9f986e49a8f5548f45ad5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messageText: {fileID: 264508036}
-  questText: {fileID: 0}
-  messagePanel: {fileID: 2008474446}
-  messageDuration: 2
-  tagToCount: Animal
-  rayDistance: 1000
-  layerMaskToIgnore:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!65 &8446141424163314469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20622,6 +20663,44 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 0.2
   minRotation: -5
   maxRotation: 5
+--- !u!114 &8446141424163314471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032867251989032178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7dfcaf54d2f44d91495b535527f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  extraTokens: []
+--- !u!114 &8446141424163314472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032867251989032178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  who: {fileID: 0}
+  text: You found the cat!
+  bgColor: {r: 1, g: 1, b: 1, a: 1}
+  fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
+  duration: 4
+  offsetY: 0.1
 --- !u!4 &8917455238568687804
 Transform:
   m_ObjectHideFlags: 0
