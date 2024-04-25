@@ -20268,6 +20268,8 @@ GameObject:
   - component: {fileID: 4236636647047003693}
   - component: {fileID: 4236636647047003694}
   - component: {fileID: 4236636647047003695}
+  - component: {fileID: 4236636647047003697}
+  - component: {fileID: 4236636647047003696}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Animal
@@ -20329,7 +20331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 0
   requiredTokens: []
-  forbiddenTokens: []
+  forbiddenTokens:
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
   extraTokens: []
 --- !u!114 &4236636647047003695
@@ -20346,13 +20349,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 0
   requiredTokens: []
-  forbiddenTokens: []
+  forbiddenTokens:
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   who: {fileID: 0}
   text: You found the duck!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
   offsetY: 0.1
+--- !u!114 &4236636647047003696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236636647047003690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  requiredTokens:
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  forbiddenTokens: []
+  who: {fileID: 0}
+  text: 'Sneaky duck stole your frog token and ate it!
+
+    You need to talk to the
+    frog again!'
+  bgColor: {r: 0.9056604, g: 0.09825563, b: 0.2861567, a: 1}
+  fgColor: {r: 0.8773585, g: 0.84417236, b: 0.120016046, a: 1}
+  duration: 2
+  offsetY: 0.1
+--- !u!114 &4236636647047003697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236636647047003690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f6b86e99be2764590789f9a35b61e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  requiredTokens:
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  forbiddenTokens: []
+  token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
+  extraTokens:
+  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
 --- !u!33 &4959151414723400287
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20579,7 +20627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4ba86d2d041994d92d0de71253d44d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canRetrigger: 0
+  canRetrigger: 1
   requiredTokens: []
   forbiddenTokens:
   - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
