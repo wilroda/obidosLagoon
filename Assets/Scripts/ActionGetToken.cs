@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
-[AddComponentMenu("Actions/Get Object")]
-public class ActionGetObject : Action
+[AddComponentMenu("Actions/Get Token")]
+public class ActionGetToken : Action
 {
     [HorizontalLine(color: EColor.Green)]
     [SerializeField]

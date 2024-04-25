@@ -14,7 +14,20 @@ public abstract class Action : MonoBehaviour
 
     private bool CheckConditions()
     {
-
+        if (requiredTokens != null)
+        {
+            foreach (var t in requiredTokens)
+            {
+                if (!InventoryManager.HasToken(t)) return false;
+            }
+        }
+        if (forbiddenTokens != null)
+        {
+            foreach (var t in forbiddenTokens)
+            {
+                if (InventoryManager.HasToken(t)) return false;
+            }
+        }
 
         if (!CustomConditions()) return false;
 
