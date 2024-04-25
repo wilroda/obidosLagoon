@@ -20,5 +20,5 @@ MonoBehaviour:
   _items:
   - token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
     quantity: 6
-  _timeLimit: 1
+  _timeLimit: 0
   _timeInSeconds: 60

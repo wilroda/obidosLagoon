@@ -7,6 +7,9 @@ public class InventoryManager : MonoBehaviour
 {
     [SerializeField] private List<Token> inventory;
 
+    private List<Token> toAdd = new List<Token>();
+    private List<Token> toRemove = new List<Token>();
+
     private static InventoryManager instance;
 
     private void Awake()
@@ -26,18 +29,28 @@ public class InventoryManager : MonoBehaviour
         inventory = new List<Token>();        
     }
 
+    private void LateUpdate()
+    {
+        // Commit changes
+        foreach (var t in toAdd) inventory.Add(t);
+        toAdd.Clear();
+
+        foreach (var t in toRemove) inventory.Remove(t);
+        toRemove.Clear();
+    }
+
     public static void AddToken(Token token)
     {
         if (instance == null) instance = GameObject.FindObjectOfType<InventoryManager>();
 
-        instance.inventory.Add(token);
+        instance.toAdd.Add(token);
     }
 
     public static void RemoveToken(Token token)
     {
         if (instance == null) instance = GameObject.FindObjectOfType<InventoryManager>();
 
-        instance.inventory.Remove(token);
+        instance.toRemove.Add(token);
     }
 
     public static bool HasToken(Token token)

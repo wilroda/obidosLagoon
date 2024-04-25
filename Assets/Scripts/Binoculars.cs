@@ -12,7 +12,6 @@ public class Binoculars : MonoBehaviour
     [SerializeField] private float widthMarginPercentage = 300f;
     [SerializeField] private float heightMarginPercentage = 300;
     [SerializeField] private RectTransform ButtonsUI;
-    [SerializeField] private RectTransform QuestUI;
 
     const float    zoomInDuration = 1f;
     const float    zoomOutDuration = 1f;
@@ -91,12 +90,10 @@ public class Binoculars : MonoBehaviour
     void HideUI()
     {
         ButtonsUI.DOScaleY(2f, .5f);
-        QuestUI.DOScaleX(0f, .2f);
     }
 
     void ShowUI()
     {
         ButtonsUI.DOScaleY(1f, .5f);
-        QuestUI.DOScaleX(1f, .2f);
     }
 }
