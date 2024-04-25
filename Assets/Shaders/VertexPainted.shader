@@ -40,7 +40,7 @@ Shader "Custom/VertexPainted"
 		ENDCG
 	}
 	Fallback "Diffuse"
-	CustomEditor "ASEMaterialInspector"
+	//CustomEditor "ASEMaterialInspector"
 }
 /*ASEBEGIN
 Version=19302

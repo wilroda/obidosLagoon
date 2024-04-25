@@ -48,7 +48,7 @@ public class RotateSmoothly : MonoBehaviour
         while (t < 1.0f)
         {
             t += Time.deltaTime * rotationSpeed;
-            transform.rotation = Quaternion.Lerp(startRotation, endRotation, t);
+            transform.rotation = Quaternion.Slerp(startRotation, endRotation, t);
             yield return null;
         }
 

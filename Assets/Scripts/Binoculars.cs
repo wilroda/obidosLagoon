@@ -5,24 +5,24 @@ using UnityEngine.UI;
 
 public class Binoculars : MonoBehaviour
 {
-    public Camera binocularCamera; // Reference to the orthographic camera
-    public RectTransform binocularsCanvas; // Canvas with all the binocular elements
-    public RectTransform binocularView; // Raw Image object where the camera is going to be rendered;
-    public RectTransform binocularMask; // UI Image overlay with binoculars shape;
+    [SerializeField] private Camera binocularCamera; // Reference to the orthographic camera
+    [SerializeField] private RectTransform binocularsCanvas; // Canvas with all the binocular elements
+    [SerializeField] private RectTransform binocularView; // Raw Image object where the camera is going to be rendered;
+    [SerializeField] private RectTransform binocularMask; // UI Image overlay with binoculars shape;
+    [SerializeField] private float widthMarginPercentage = 300f;
+    [SerializeField] private float heightMarginPercentage = 300;
+    [SerializeField] private RectTransform ButtonsUI;
+    [SerializeField] private RectTransform QuestUI;
 
-    public float widthMargin = 300f;
-    public float heightMargin = 300;
+    const float    zoomInDuration = 1f;
+    const float    zoomOutDuration = 1f;
 
-    public bool usingBinoculars = false;
-    bool usingZoom = false;
-    float zoomSize = 0f;
-    public float zoomInDuration = 1f;
-    public float zoomOutDuration = 1f;
-    
-    Vector3 worldPosition;
+    bool        _usingBinoculars = false;
+    float       zoomSize = 0f;
+    Vector3     worldPosition;
+    Coroutine   zoomCR;
 
-    public RectTransform ButtonsUI;
-    public RectTransform QuestUI;
+    public bool usingBinoculars => _usingBinoculars;
 
     void Start()
     {
@@ -30,22 +30,18 @@ public class Binoculars : MonoBehaviour
     }
 
     void Update()
-    {        
-        if(Input.GetKeyDown(KeyCode.B) && usingBinoculars && !usingZoom)
+    {
+        if ((Input.GetKeyDown(KeyCode.B) || Input.GetMouseButtonDown(1)))
         {
-            BinocularsViewOff();
-        } else if(Input.GetKeyDown(KeyCode.B) && !usingBinoculars && !usingZoom)
-        {
-            BinocularsViewOn();
-        } 
-        
+            ToggleBinoculars();
+        }
         
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         // Cursor.visible = false;
 
-        mousePos.x = Mathf.Clamp(mousePos.x, widthMargin, Screen.width - widthMargin);
-        mousePos.y = Mathf.Clamp(mousePos.y, heightMargin, Screen.height - heightMargin);
+        mousePos.x = Mathf.Clamp(mousePos.x, Screen.width * widthMarginPercentage, Screen.width * (1.0f - widthMarginPercentage));
+        mousePos.y = Mathf.Clamp(mousePos.y, Screen.height * heightMarginPercentage, Screen.height * ( 1.0f - heightMarginPercentage));
 
         worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
 
@@ -54,38 +50,42 @@ public class Binoculars : MonoBehaviour
         binocularMask.transform.position = worldPosition;
     }
 
+    public void ToggleBinoculars()
+    {
+        if (zoomCR != null) return;
+
+        if (_usingBinoculars) BinocularsViewOff();
+        else BinocularsViewOn();
+    }
+
     public void BinocularsViewOn()
     {
-        usingBinoculars = true;
-        StartCoroutine(ZoomIn(zoomInDuration));        
+        _usingBinoculars = true;
+        zoomCR = StartCoroutine(ZoomIn(zoomInDuration));        
     }
 
     public void BinocularsViewOff()
     {
-        usingBinoculars = false;
-        StartCoroutine(ZoomOut(zoomOutDuration));        
+        _usingBinoculars = false;
+        zoomCR = StartCoroutine(ZoomOut(zoomOutDuration));        
     }
 
     IEnumerator ZoomIn(float duration)
     {
-        usingZoom = true;
         HideUI();
         binocularView.DOScale(1f, zoomInDuration);
         binocularMask.DOScale(1f, zoomInDuration - 0.5f);
         yield return new WaitForSeconds(duration);
-        usingZoom = false;
-        
+        zoomCR = null;
     }
 
     IEnumerator ZoomOut(float duration)
     {
-        usingZoom = true;
         ShowUI();
         binocularView.DOScale(0f, 0f);
         binocularMask.DOScale(10f, zoomOutDuration);
         yield return new WaitForSeconds(duration);
-        usingZoom = false;
-        
+        zoomCR = null;
     }
 
     void HideUI()
@@ -99,6 +99,4 @@ public class Binoculars : MonoBehaviour
         ButtonsUI.DOScaleY(1f, .5f);
         QuestUI.DOScaleX(1f, .2f);
     }
-
-   
 }
