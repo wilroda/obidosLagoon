@@ -8195,6 +8195,23 @@ MonoBehaviour:
   _offsetY: 0.2
   _bgColor: {r: 1, g: 1, b: 1, a: 1}
   _fgColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &624312604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624312598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b989aec23937362449b921fc879e4bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  requiredTokens: []
+  forbiddenTokens: []
+  questConditions: []
+  scene: SampleGame2
 --- !u!1001 &625219266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21326,6 +21343,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3981934011063942192, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
       insertIndex: -1
       addedObject: {fileID: 624312603}
+    - targetCorrespondingSourceObject: {fileID: 3981934011063942192, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 624312604}
   m_SourcePrefab: {fileID: 100100000, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
 --- !u!1 &4236636647047003690
 GameObject:
