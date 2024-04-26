@@ -68,6 +68,12 @@ public class QuestManager : MonoBehaviour
             {
                 if (q.isComplete)
                 {
+                    // If binoculars on, disable them
+                    var binoculars = FindObjectOfType<Binoculars>();
+                    if ((binoculars != null) && (binoculars.usingBinoculars))
+                    {
+                        binoculars.BinocularsViewOff();
+                    }
                     // Move quest to complete, and exit (if there are multiple quests
                     // that can be finished at the same time, the next frame they'll be 
                     // worked on).

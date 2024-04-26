@@ -13,7 +13,7 @@ public static class Helpers
             var c = originalName[i];
             if (char.IsUpper(c) && (i > 0))
             {
-                ret += " " + char.IsUpper(originalName[i]);
+                ret += " " + c;
             }
             else if (c == '_') ret += " ";
             else ret += c;
