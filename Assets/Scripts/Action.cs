@@ -12,7 +12,7 @@ public abstract class Action : MonoBehaviour
     [SerializeField] private Token[] requiredTokens;
     [SerializeField] private Token[] forbiddenTokens;
 
-    private bool CheckConditions()
+    public bool CheckConditions()
     {
         if (requiredTokens != null)
         {

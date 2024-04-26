@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
 {
-    [SerializeField] private LayerMask ignoreLayers;
+    [SerializeField] private LayerMask  ignoreLayers;
+    [SerializeField] private Camera     mainCamera;
+
+    private SpeechBubble speechBubble;
 
     void Start()
     {
@@ -15,36 +18,79 @@ public class InteractionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            // Cast a ray from the mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        bool clearTooltip = true;
 
-            var hits = Physics.RaycastAll(ray, 1000.0f, ~ignoreLayers, QueryTriggerInteraction.Collide);
+        // Cast a ray from the mouse position
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+
+
+        var hits = Physics.RaycastAll(ray, 1000.0f, ~ignoreLayers, QueryTriggerInteraction.Collide);
+        if ((hits != null) && (hits.Length > 0))
+        {
             Array.Sort(hits, (hit1, hit2) => hit1.distance.CompareTo(hit2.distance));
 
             foreach (var h in hits)
             {
-                // Check if object has actions
-                var actions = h.collider.GetComponents<Action>();
-                if (actions.Length > 0)
+                var interactable = h.collider.GetComponent<Tooltip>();
+                if ((interactable != null) && (interactable.CheckConditions()))
                 {
-                    foreach (var action in actions)
+                    string text = interactable.tooltip;
+                    if ((text != "") && (text != null))
                     {
-                        if (action.enabled)
+                        clearTooltip = false;
+
+                        if (interactable.tooltipIsSpeech)
                         {
-                            action.Run();
+                            if (speechBubble == null)
+                            {
+                                speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY);
+                            }
+                            else
+                            {
+                                speechBubble.Set(h.transform, interactable.offsetY, mainCamera);
+                                speechBubble.Set(text, interactable.bgColor, interactable.fgColor);
+                            }
                         }
                     }
                 }
-                else
+
+                if (Input.GetMouseButtonDown(0))
                 {
-                    // No actions, might want to do something here (play a sound or something)
+                    // Check if object has actions
+                    var actions = h.collider.GetComponents<Action>();
+                    if (actions.Length > 0)
+                    {
+                        foreach (var action in actions)
+                        {
+                            if (action.enabled)
+                            {
+                                action.Run();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // No actions, might want to do something here (play a sound or something)
+                    }
                 }
 
                 // Don't check anymore objects (they're hidden behind this one)
                 break;
             }
+        }
+
+        if (clearTooltip)
+        {
+            ClearTooltip();
+        }
+    }
+
+    void ClearTooltip()
+    {
+        if (speechBubble != null)
+        {
+            SpeechManager.Clear(speechBubble);
+            speechBubble = null;
         }
     }
 }
