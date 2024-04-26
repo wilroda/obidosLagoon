@@ -693,6 +693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock-flat-grass
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 54945d10cc27cb642911d8215c652683, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -902,6 +906,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
       propertyPath: m_Name
       value: floor-old (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1503,6 +1511,7 @@ GameObject:
   - component: {fileID: 194796855}
   - component: {fileID: 194796858}
   - component: {fileID: 194796857}
+  - component: {fileID: 194796859}
   m_Layer: 0
   m_Name: Rabbit
   m_TagString: Untagged
@@ -1522,7 +1531,12 @@ Transform:
   m_LocalPosition: {x: -3.929, y: 0, z: 4.477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1994451881}
+  - {fileID: 1476210208}
+  - {fileID: 282750974}
+  - {fileID: 2132112463}
+  - {fileID: 752991148}
   m_Father: {fileID: 1598756632}
   m_LocalEulerAnglesHint: {x: 0, y: -205.099, z: 0}
 --- !u!23 &194796855
@@ -1614,6 +1628,44 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.049339402
   m_Center: {x: 0, y: 0.04929084, z: -0.0028899407}
+--- !u!114 &194796859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194796853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527851c06d2587d48a019ac6347f4fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  requiredTokens: []
+  forbiddenTokens: []
+  questConditions:
+  - state: 3
+    quest: {fileID: 11400000, guid: f8da959fb53f8fc48bdc10d968a28775, type: 2}
+  waypoints:
+  - {fileID: 1994451881}
+  - {fileID: 1476210208}
+  - {fileID: 282750974}
+  - {fileID: 2132112463}
+  - {fileID: 752991148}
+  speed: 1
+  animationSpeed: 0.25
+  animationAmplitude: 0.1
+  followGround: 1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  checkCollisions: 1
+  displayTextOnCollision: Can't get pass the tree!
+  textOffsetY: 0.1
+  textDuration: 1
+  textBackground: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  loop: 0
 --- !u!1001 &202705308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1746,6 +1798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1807,6 +1863,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
       propertyPath: m_Name
       value: floor-old (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2221,6 +2281,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
   m_PrefabInstance: {fileID: 743556439}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &282750973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282750974}
+  m_Layer: 0
+  m_Name: Rabbit_Waypoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &282750974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282750973}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.5733, z: -0, w: 0.81934553}
+  m_LocalPosition: {x: -0.84, y: 0, z: 5.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194796854}
+  m_LocalEulerAnglesHint: {x: 0, y: -69.961, z: 0}
 --- !u!1 &288360988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -2838,6 +2929,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: be462f9a97e678b48802e8462c4c50ba, type: 3}
       propertyPath: m_Name
       value: crops_dirtRowEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: be462f9a97e678b48802e8462c4c50ba, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5587,6 +5682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor-old (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5845,7 +5944,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 486120483}
-  m_Layer: 0
+  - component: {fileID: 486120484}
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5888,6 +5988,27 @@ Transform:
   - {fileID: 432971024}
   m_Father: {fileID: 1601725012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &486120484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486120482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.97975, y: 0.07571844, z: 0.52}
+  m_Center: {x: 0.0058066845, y: 0.018054407, z: 0}
 --- !u!1001 &488694019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5939,6 +6060,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
       propertyPath: m_Name
       value: floor-old (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6059,6 +6184,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
       propertyPath: m_Name
       value: floor-old
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6812,6 +6941,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7699,6 +7832,37 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 3
   minRotation: -10
   maxRotation: 10
+--- !u!1 &752991147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752991148}
+  m_Layer: 0
+  m_Name: Rabbit_Waypoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752991148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752991147}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.14111632, z: -0, w: 0.98999304}
+  m_LocalPosition: {x: -3.98, y: 0.046, z: 7.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194796854}
+  m_LocalEulerAnglesHint: {x: 0, y: -16.225, z: 0}
 --- !u!1001 &762698849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7865,6 +8029,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8353,6 +8521,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8993,6 +9165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor-old (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9134,6 +9310,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9806,6 +9986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor-old (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10157,6 +10341,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10540,6 +10728,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 46aa4a2fdbcac35449e7feede15de658, type: 3}
       propertyPath: m_Name
       value: floor-hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46aa4a2fdbcac35449e7feede15de658, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11143,6 +11335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11204,6 +11400,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12008,6 +12208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock-sand-b
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 527171124004b814eb419c10fff7202c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12143,7 +12347,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427018740}
-  m_Layer: 0
+  - component: {fileID: 1427018741}
+  m_Layer: 6
   m_Name: CarrotPatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12182,6 +12387,27 @@ Transform:
   - {fileID: 241975681}
   m_Father: {fileID: 1601725012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1427018741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427018739}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.325305, y: 0.10522035, z: 1.0744319}
+  m_Center: {x: -0.4474132, y: 0.21964286, z: 0.3694231}
 --- !u!1 &1438366164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -12437,6 +12663,37 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 3
   minRotation: -10
   maxRotation: 10
+--- !u!1 &1476210207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476210208}
+  m_Layer: 0
+  m_Name: Rabbit_Waypoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1476210208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476210207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.324, y: 0, z: 4.269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194796854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488349735 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -12533,6 +12790,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12905,6 +13166,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15380,6 +15645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor-old (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5236aca57149749468aa35d60dbbb518, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17139,6 +17408,37 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 3
   minRotation: -10
   maxRotation: 10
+--- !u!1 &1994451880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994451881}
+  m_Layer: 0
+  m_Name: Rabbit_Waypoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1994451881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994451880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.98, y: 0, z: 1.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194796854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021045852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 527171124004b814eb419c10fff7202c, type: 3}
@@ -17213,9 +17513,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
       propertyPath: m_Name
       value: floor (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17786,7 +18098,7 @@ GameObject:
   - component: {fileID: 2085620165}
   - component: {fileID: 2085620164}
   - component: {fileID: 2085620163}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18067,6 +18379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4993a01ed935c414daff54ea8e6bf727, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18139,6 +18455,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 332a6cce9af6375429888d143d528abb, type: 3}
   m_PrefabInstance: {fileID: 2124608059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2132112462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132112463}
+  m_Layer: 0
+  m_Name: Rabbit_Waypoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2132112463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132112462}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.5733, z: -0, w: 0.81934553}
+  m_LocalPosition: {x: -4.58, y: 0, z: 7.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194796854}
+  m_LocalEulerAnglesHint: {x: 0, y: -69.961, z: 0}
 --- !u!1001 &2143683375
 PrefabInstance:
   m_ObjectHideFlags: 0

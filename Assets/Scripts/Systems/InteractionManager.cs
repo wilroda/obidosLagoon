@@ -11,7 +11,22 @@ public class InteractionManager : MonoBehaviour
     private SpeechBubble    speechBubble;
     private GameOverUI      gameOver;
 
-    void Start()
+    private static InteractionManager instance;
+
+    void Awake()
+    {
+        if ((instance == null) || (instance == this))
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    private void Start()
     {
         gameOver = FindObjectOfType<GameOverUI>(true);
     }
@@ -95,5 +110,10 @@ public class InteractionManager : MonoBehaviour
             SpeechManager.Clear(speechBubble);
             speechBubble = null;
         }
+    }
+
+    public static LayerMask GetLayerMask()
+    {
+        return ~instance.ignoreLayers;
     }
 }
