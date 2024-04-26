@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
-using UnityEngine.SceneManagement;
 
 [AddComponentMenu("Actions/Change Level")]
 public class ActionChangeLevel : Action
@@ -13,7 +12,7 @@ public class ActionChangeLevel : Action
 
     protected override bool OnRun()
     {
-        SceneManager.LoadScene(scene);
+        SceneHandler.GotoScene(scene);
 
         return true;
     }

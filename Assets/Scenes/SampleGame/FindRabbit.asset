@@ -19,4 +19,4 @@ MonoBehaviour:
   - token: {fileID: 11400000, guid: 96372b77dafb38448a4addd967d8f4be, type: 2}
     quantity: 1
   _timeLimit: 1
-  _timeInSeconds: 30
+  _timeInSeconds: 5

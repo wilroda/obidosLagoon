@@ -10,7 +10,9 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI    reasonText;
 
     private CanvasGroup canvasGroup;
+    private bool        _gameOverEnabled = false;
 
+    public bool isGameOver => _gameOverEnabled;
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
@@ -23,11 +25,18 @@ public class GameOverUI : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+        SceneHandler.GotoScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Exit()
+    {
+        //
     }
 
     public void EnableGameOver(string reason)
     {
+        _gameOverEnabled = true;
         gameObject.SetActive(true);
         reasonText.text = reason;
         canvasGroup.alpha = 0.0f;

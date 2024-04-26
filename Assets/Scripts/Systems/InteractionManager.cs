@@ -8,11 +8,12 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private LayerMask  ignoreLayers;
     [SerializeField] private Camera     mainCamera;
 
-    private SpeechBubble speechBubble;
+    private SpeechBubble    speechBubble;
+    private GameOverUI      gameOver;
 
     void Start()
     {
-        
+        gameOver = FindObjectOfType<GameOverUI>(true);
     }
 
     // Update is called once per frame
@@ -20,62 +21,64 @@ public class InteractionManager : MonoBehaviour
     {
         bool clearTooltip = true;
 
-        // Cast a ray from the mouse position
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-
-
-        var hits = Physics.RaycastAll(ray, 1000.0f, ~ignoreLayers, QueryTriggerInteraction.Collide);
-        if ((hits != null) && (hits.Length > 0))
+        if (!gameOver.isGameOver)
         {
-            Array.Sort(hits, (hit1, hit2) => hit1.distance.CompareTo(hit2.distance));
+            // Cast a ray from the mouse position
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-            foreach (var h in hits)
+            var hits = Physics.RaycastAll(ray, 1000.0f, ~ignoreLayers, QueryTriggerInteraction.Collide);
+            if ((hits != null) && (hits.Length > 0))
             {
-                var interactable = h.collider.GetComponent<ShowTooltip>();
-                if ((interactable != null) && (interactable.CheckConditions()))
-                {
-                    string text = interactable.tooltip;
-                    if ((text != "") && (text != null))
-                    {
-                        clearTooltip = false;
+                Array.Sort(hits, (hit1, hit2) => hit1.distance.CompareTo(hit2.distance));
 
-                        if (interactable.tooltipIsSpeech)
+                foreach (var h in hits)
+                {
+                    var interactable = h.collider.GetComponent<ShowTooltip>();
+                    if ((interactable != null) && (interactable.CheckConditions()))
+                    {
+                        string text = interactable.tooltip;
+                        if ((text != "") && (text != null))
                         {
-                            if (speechBubble == null)
+                            clearTooltip = false;
+
+                            if (interactable.tooltipIsSpeech)
                             {
-                                speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY, false);
-                            }
-                            else
-                            {
-                                speechBubble.Set(h.transform, interactable.offsetY, mainCamera);
-                                speechBubble.Set(text, interactable.bgColor, interactable.fgColor);
+                                if (speechBubble == null)
+                                {
+                                    speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY, false);
+                                }
+                                else
+                                {
+                                    speechBubble.Set(h.transform, interactable.offsetY, mainCamera);
+                                    speechBubble.Set(text, interactable.bgColor, interactable.fgColor);
+                                }
                             }
                         }
                     }
-                }
 
-                if (Input.GetMouseButtonDown(0))
-                {
-                    // Check if object has actions
-                    var actions = h.collider.GetComponents<Action>();
-                    if (actions.Length > 0)
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        foreach (var action in actions)
+                        // Check if object has actions
+                        var actions = h.collider.GetComponents<Action>();
+                        if (actions.Length > 0)
                         {
-                            if (action.enabled)
+                            foreach (var action in actions)
                             {
-                                action.Run();
+                                if (action.enabled)
+                                {
+                                    action.Run();
+                                }
                             }
                         }
+                        else
+                        {
+                            // No actions, might want to do something here (play a sound or something)
+                        }
                     }
-                    else
-                    {
-                        // No actions, might want to do something here (play a sound or something)
-                    }
-                }
 
-                // Don't check anymore objects (they're hidden behind this one)
-                break;
+                    // Don't check anymore objects (they're hidden behind this one)
+                    break;
+                }
             }
         }
 

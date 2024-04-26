@@ -1558,7 +1558,7 @@ PrefabInstance:
       objectReference: {fileID: 1385414391372253023}
     - target: {fileID: 941535765631771130, guid: dbabcf4b60c397a4b9136e3bd542d5ad, type: 3}
       propertyPath: m_Name
-      value: AreaManager
+      value: Managers
       objectReference: {fileID: 0}
     - target: {fileID: 1648991665074037400, guid: dbabcf4b60c397a4b9136e3bd542d5ad, type: 3}
       propertyPath: activeQuests.Array.size
@@ -1898,7 +1898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442673783331939906, guid: 0c91d0e8b34d35d4f91e5140f3314d72, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 430
+      value: 936
       objectReference: {fileID: 0}
     - target: {fileID: 7442673783331939906, guid: 0c91d0e8b34d35d4f91e5140f3314d72, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1906,7 +1906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442673783331939906, guid: 0c91d0e8b34d35d4f91e5140f3314d72, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 247
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7442673783331939906, guid: 0c91d0e8b34d35d4f91e5140f3314d72, type: 3}
       propertyPath: m_AnchoredPosition.y

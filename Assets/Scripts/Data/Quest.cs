@@ -73,7 +73,7 @@ public class Quest : ScriptableObject
         {
             if (_timeLimit)
             {
-                float t = Time.time - QuestManager.GetTime(this);
+                float t = QuestManager.GetElapsedTime(this);
                 if (t >_timeInSeconds)
                 {
                     return false;
@@ -85,6 +85,22 @@ public class Quest : ScriptableObject
             }
 
             return true;
+        }
+    }
+
+    public bool isFail
+    {
+        get
+        {
+            if (_timeLimit)
+            {
+                float t = QuestManager.GetElapsedTime(this);
+                if (t > _timeInSeconds)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

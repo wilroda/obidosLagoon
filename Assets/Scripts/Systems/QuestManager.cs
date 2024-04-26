@@ -45,8 +45,6 @@ public class QuestManager : MonoBehaviour
 
     void Awake()
     {
-        DOTween.SetTweensCapacity(1000, 100);
-
         if ((instance == null) || (instance == this))
         {
             instance = this;
@@ -66,7 +64,9 @@ public class QuestManager : MonoBehaviour
         {
             if (q != null)
             {
-                if (q.isComplete)
+                bool isComplete = q.isComplete;
+                bool isFail = q.isFail;
+                if (isComplete || isFail)
                 {
                     // If binoculars on, disable them
                     var binoculars = FindObjectOfType<Binoculars>();
@@ -74,17 +74,22 @@ public class QuestManager : MonoBehaviour
                     {
                         binoculars.BinocularsViewOff();
                     }
-                    // Move quest to complete, and exit (if there are multiple quests
-                    // that can be finished at the same time, the next frame they'll be 
-                    // worked on).
-                    completedQuests.Add(q);
-                    activeQuests.Remove(q);
+                    if (isComplete)
+                    {
+                        // Move quest to complete, and exit (if there are multiple quests
+                        // that can be finished at the same time, the next frame they'll be 
+                        // worked on).
+                        completedQuests.Add(q);
+                        activeQuests.Remove(q);
+                    }
                     // Find actions to run
-                    var qcs = FindObjectsByType<OnQuestCompleted>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+                    var qcs = FindObjectsByType<OnQuestStateChange>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
                     if (qcs != null)
                     {
                         foreach (var qc in qcs)
                         {
+                            if ((isComplete) && (!qc.IsComplete())) continue;
+                            if ((isFail) && (qc.IsComplete())) continue;
                             if (qc.quest == q)
                             {
                                 var actions = qc.GetComponents<Action>();
@@ -102,7 +107,7 @@ public class QuestManager : MonoBehaviour
                         }
                     }
                     return;
-                }
+                }               
             }
         }
     }
@@ -126,7 +131,7 @@ public class QuestManager : MonoBehaviour
         return null;
     }
 
-    public static float GetTime(Quest quest)
+    public static float GetElapsedTime(Quest quest)
     {
         if (instance == null) return 0.0f;
 

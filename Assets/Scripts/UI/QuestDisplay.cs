@@ -40,7 +40,7 @@ public class QuestDisplay : MonoBehaviour
         if (quest.hasTimeLimit)
         {
             float totalTime = quest.maxDuration;
-            float currentTime = QuestManager.GetTime(quest);
+            float currentTime = QuestManager.GetElapsedTime(quest);
             float timeRemaining = totalTime - currentTime;
             if (timeRemaining < 0)
             {
