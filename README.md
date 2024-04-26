@@ -6,7 +6,7 @@ A game about the Óbidos Lagoon
 **Object Click Actions:**
 - Need to add conditions for having specific quests or not
 - Distance conditions
-- Quest completion/fail system
+- Quest fail system
 - Movement:
     - On click the object starts/stops moving, on a pre-determined path (waypoints or bezier curves?)
     - Parameters:
@@ -27,10 +27,6 @@ A game about the Óbidos Lagoon
 - Play sound
 - Game Over action
   - Quest is "Find Amphybians", you press on a mamal, game over, restart
-- Go to another scene action
-  - When a quest is done, or if you click on a certain place: not navigation, idea is that whole system is reset after this
-- Disappear/Appear/Toggle action
-- Give quest action
          
 **UI:**
 - Mouse over interactable objects, makes the cursor change;
