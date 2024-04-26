@@ -18,6 +18,7 @@ public class IdleAnimation : MonoBehaviour
     Vector3 positiveRotation;
     Vector3 negativeRotation;
     Vector3 currentRotation;
+    Vector3 originalScale;
     public float timeBetweenRotateIntervals = 1f;
     public float minRotation = -10f;
     public float maxRotation = 10f;
@@ -25,6 +26,7 @@ public class IdleAnimation : MonoBehaviour
     void Start()
     {
         currentRotation = transform.localEulerAngles;
+        originalScale = transform.localScale;
     }
     // Update is called once per frame
     void Update()
@@ -57,14 +59,14 @@ public class IdleAnimation : MonoBehaviour
 
     IEnumerator ScalingUp()
     {
-        transform.DOScale(Random.Range(maxScale, maxScale - 0.5f), animationSpeed);
+        transform.DOScale(originalScale * Random.Range(maxScale, maxScale - 0.5f), animationSpeed);
         yield return new WaitForSeconds(timeBetweenScaleIntervals);
         scaleDown = true;
     }
 
     IEnumerator ScalingDown()
     {
-        transform.DOScale(Random.Range(minScale, minScale - 0.5f), animationSpeed);
+        transform.DOScale(originalScale * Random.Range(minScale, minScale - 0.5f), animationSpeed);
         yield return new WaitForSeconds(timeBetweenScaleIntervals);
         scaleUp = true;
     }
