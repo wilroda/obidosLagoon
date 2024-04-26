@@ -51,7 +51,7 @@ public class QuestManager : MonoBehaviour
         {
             instance = this;
 
-            if (completedQuests == null) completedQuests = new List<Quest>();
+            if (activeQuests == null) activeQuests = new List<Quest>();
             if (completedQuests == null) completedQuests = new List<Quest>();
         }
         else
@@ -62,7 +62,43 @@ public class QuestManager : MonoBehaviour
 
     void Update()
     {
-        
+        foreach (var q in activeQuests)
+        {
+            if (q != null)
+            {
+                if (q.isComplete)
+                {
+                    // Move quest to complete, and exit (if there are multiple quests
+                    // that can be finished at the same time, the next frame they'll be 
+                    // worked on).
+                    completedQuests.Add(q);
+                    activeQuests.Remove(q);
+                    // Find actions to run
+                    var qcs = FindObjectsByType<QuestCompleted>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+                    if (qcs != null)
+                    {
+                        foreach (var qc in qcs)
+                        {
+                            if (qc.quest == q)
+                            {
+                                var actions = qc.GetComponents<Action>();
+                                if (actions != null)
+                                {
+                                    foreach (var action in actions)
+                                    {
+                                        if (action.enabled)
+                                        {
+                                            action.Run();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return;
+                }
+            }
+        }
     }
 
     public static Quest GetActiveQuest(int i, bool showHidden)

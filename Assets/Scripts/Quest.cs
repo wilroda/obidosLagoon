@@ -66,4 +66,25 @@ public class Quest : ScriptableObject
     {
         return GetToken(index).displayName;
     }
+
+    public bool isComplete
+    {
+        get
+        {
+            if (_timeLimit)
+            {
+                float t = Time.time - QuestManager.GetTime(this);
+                if (t >_timeInSeconds)
+                {
+                    return false;
+                }
+            }
+            for (int i = 0; i < _items.Length; i++)
+            {
+                if (!IsComplete(i)) return false;
+            }
+
+            return true;
+        }
+    }
 }
