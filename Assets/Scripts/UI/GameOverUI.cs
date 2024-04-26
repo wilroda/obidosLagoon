@@ -25,12 +25,14 @@ public class GameOverUI : MonoBehaviour
 
     public void Retry()
     {
-        
+        if (canvasGroup.alpha < 1) return;
+
         SceneHandler.GotoScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Exit()
     {
+        if (canvasGroup.alpha < 1) return;
         //
     }
 
