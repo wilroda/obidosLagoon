@@ -80,7 +80,7 @@ public class QuestManager : MonoBehaviour
                     completedQuests.Add(q);
                     activeQuests.Remove(q);
                     // Find actions to run
-                    var qcs = FindObjectsByType<QuestCompleted>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+                    var qcs = FindObjectsByType<OnQuestCompleted>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
                     if (qcs != null)
                     {
                         foreach (var qc in qcs)

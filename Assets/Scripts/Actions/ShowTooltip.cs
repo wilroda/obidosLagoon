@@ -4,7 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tooltip : Action
+[AddComponentMenu("Actions/Show Tooltip")]
+public class ShowTooltip : Action
 {
     [HorizontalLine(color: EColor.Green)]
     [SerializeField] private string _tooltip;

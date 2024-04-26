@@ -31,7 +31,7 @@ public class InteractionManager : MonoBehaviour
 
             foreach (var h in hits)
             {
-                var interactable = h.collider.GetComponent<Tooltip>();
+                var interactable = h.collider.GetComponent<ShowTooltip>();
                 if ((interactable != null) && (interactable.CheckConditions()))
                 {
                     string text = interactable.tooltip;

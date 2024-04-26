@@ -59,12 +59,14 @@ public class Binoculars : MonoBehaviour
 
     public void BinocularsViewOn()
     {
+        if (_usingBinoculars) return;
         _usingBinoculars = true;
         zoomCR = StartCoroutine(ZoomIn(zoomInDuration));        
     }
 
     public void BinocularsViewOff()
     {
+        if (!_usingBinoculars) return;
         _usingBinoculars = false;
         zoomCR = StartCoroutine(ZoomOut(zoomOutDuration));        
     }

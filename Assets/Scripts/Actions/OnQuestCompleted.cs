@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestCompleted : MonoBehaviour
+[AddComponentMenu("Actions/On Quest Complete")]
+public class OnQuestCompleted : MonoBehaviour
 {
     [SerializeField] private Quest _quest;
 
