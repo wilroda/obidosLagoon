@@ -9,6 +9,8 @@ public class ActionTalk : Action
     [HorizontalLine(color: EColor.Green)]
     [SerializeField]
     private Transform who;
+    [SerializeField, ShowIf("hasTransform")]
+    private float offsetY = 0.1f;
     [SerializeField, TextArea]
     private string text;
     [SerializeField]
@@ -17,8 +19,8 @@ public class ActionTalk : Action
     private Color fgColor = Color.black;
     [SerializeField]
     private float duration = 2.0f;
-    [SerializeField]
-    private float offsetY = 0.1f;
+
+    bool hasTransform => who != null;
 
     protected override bool OnRun()
     {

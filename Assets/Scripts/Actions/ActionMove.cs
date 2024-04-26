@@ -35,30 +35,16 @@ public class ActionMove : Action
     [SerializeField]
     private bool        loop = false;
 
-    Vector3             target;
-    Quaternion          targetRotation;
+    Transform           target;
     int                 waypointIndex = -1;
     float               movementAngle = 0.0f;
-    List<Vector3>       actualPositions;
-    List<Quaternion>    actualRotations;
     float               lastOffsetY;
     Vector3             originalPosition;
 
     private void Start()
     {
-        target = transform.position;
+        target = transform;
 
-        originalPosition = target;
-
-        actualPositions = new List<Vector3>();
-        actualRotations = new List<Quaternion>();
-        foreach (var waypoint in waypoints)
-        {
-            Vector3 pos = waypoint.position;
-            pos.y = GetGroundY(pos);
-            actualPositions.Add(pos);
-            actualRotations.Add(waypoint.rotation);
-        }
         lastOffsetY = 0.0f;
     }
 
@@ -69,12 +55,15 @@ public class ActionMove : Action
         Vector3 pos = transform.position;
         pos.y -= lastOffsetY;
 
-        float distance = GetDistance(target, pos);
+        Vector3 targetPos = target.position;
+        targetPos.y = GetGroundY(targetPos);
+
+        float distance = GetDistance(targetPos, pos);
         if (distance > 1e-3)
         {
             isMoving = true;
 
-            Vector3 newPos = Vector3.MoveTowards(pos, target, speed * Time.deltaTime);
+            Vector3 newPos = Vector3.MoveTowards(pos, targetPos, speed * Time.deltaTime);
             Vector3 dir = (newPos - pos);
             if (dir.sqrMagnitude > 1e-3)
             {
@@ -83,14 +72,14 @@ public class ActionMove : Action
             }
             else
             {
-                transform.rotation = targetRotation;
+                transform.rotation = target.rotation;
             }
 
             pos = newPos;
         }
         else
         {
-            transform.rotation = targetRotation;
+            transform.rotation = target.rotation;
 
             lastOffsetY = 0.0f;
 
@@ -145,32 +134,34 @@ public class ActionMove : Action
     protected override bool OnRun()
     {
         // Still moving, can't move again before we're done
-        float distance = GetDistance(target, transform.position);
+        Vector3 targetPos = target.position;
+        targetPos.y = GetGroundY(targetPos);
+
+        float distance = GetDistance(targetPos, transform.position);
         if (distance > 1e-3) return true;
 
-        Vector3     prevPosition = target;
-        Quaternion  prevRotation = targetRotation;
+        Transform   prevTarget = target;
         int         prevWaypointIndex = waypointIndex;
         bool        end = false;
 
         waypointIndex++;
-        if (waypointIndex >= actualPositions.Count)
+        if (waypointIndex >= waypoints.Length)
         {
             if (loop) waypointIndex = 0;
             else
             {
-                waypointIndex = actualPositions.Count - 1;
+                waypointIndex = waypoints.Length - 1;
                 end = true;
             }
         }
-        target = actualPositions[waypointIndex];
-        targetRotation = actualRotations[waypointIndex];
+        target = waypoints[waypointIndex];
 
         if ((checkCollisions) && (!end))
         {
             // Check if there's a collision between the current position and the next one
             var pos = transform.position + Vector3.up * 0.1f;
-            var dest = target + Vector3.up * 0.1f;
+            var dest = target.position;
+            dest.y = GetGroundY(dest) + 0.1f;
             var dir = dest - pos;
             var maxDist = dir.magnitude;
             dir /= maxDist;
@@ -181,8 +172,7 @@ public class ActionMove : Action
                 if (IsChild(h.collider.gameObject, gameObject)) continue;
 
                 // Found an intersection not with himself, can't move for now!
-                target = prevPosition;
-                targetRotation = prevRotation;
+                target = prevTarget;
                 waypointIndex = prevWaypointIndex;
 
                 if (displayTextOnCollision != "")
@@ -216,35 +206,17 @@ public class ActionMove : Action
 
         Gizmos.color = Color.yellow;
 
-        if (UnityEditor.EditorApplication.isPlaying)
+        Vector3 oldPos = transform.position;
+        foreach (var t in waypoints)
         {
-            Vector3 oldPos = originalPosition;
-            foreach (var t in actualPositions)
-            {
-                Gizmos.DrawLine(oldPos, t);
+            Gizmos.DrawLine(oldPos, t.position);
 
-                oldPos = t;
-            }
-
-            if (loop)
-            {
-                Gizmos.DrawLine(oldPos, actualPositions[0]);
-            }
+            oldPos = t.position;
         }
-        else
+
+        if (loop)
         {
-            Vector3 oldPos = transform.position;
-            foreach (var t in waypoints)
-            {
-                Gizmos.DrawLine(oldPos, t.position);
-
-                oldPos = t.position;
-            }
-
-            if (loop)
-            {
-                Gizmos.DrawLine(oldPos, waypoints[0].position);
-            }
+            Gizmos.DrawLine(oldPos, waypoints[0].position);
         }
     }
 #endif
