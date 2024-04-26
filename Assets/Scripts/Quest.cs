@@ -13,6 +13,8 @@ public class Quest : ScriptableObject
         public int      quantity;
     }
     [SerializeField] 
+    private bool        _hidden;
+    [SerializeField] 
     private string      _displayName;
     [SerializeField, TextArea] 
     private string      _description;
@@ -35,6 +37,7 @@ public class Quest : ScriptableObject
         }
     }
 
+    public bool hidden => _hidden;
     public string description => _description;
 
     public int nObjectives => (_items == null) ? (0) : (_items.Length);

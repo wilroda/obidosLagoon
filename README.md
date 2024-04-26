@@ -3,9 +3,6 @@ A game about the Óbidos Lagoon
 
 # TODO
     
-**Quests**
-- Quests can be hidden from the quest log (hidden quests)
-
 **Object Click Actions:**
 - Need to add conditions for having specific quests or not
 - Distance conditions

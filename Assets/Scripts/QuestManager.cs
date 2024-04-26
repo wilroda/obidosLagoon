@@ -22,6 +22,26 @@ public class QuestManager : MonoBehaviour
             return instance.activeQuests.Count;
         }
     }
+    public static int openQuestsNotHidden
+    {
+        get
+        {
+            if (instance == null) instance = FindObjectOfType<QuestManager>();
+            if (instance == null) return 0;
+            if (instance.activeQuests == null) return 0;
+
+            int count = 0;
+            foreach (var q in instance.activeQuests)
+            {
+                if (q != null)
+                {
+                    if (!q.hidden) count++;
+                }
+            }
+
+            return count;
+        }
+    }
 
     void Awake()
     {
@@ -42,11 +62,23 @@ public class QuestManager : MonoBehaviour
         
     }
 
-    public static Quest GetActiveQuest(int i)
+    public static Quest GetActiveQuest(int i, bool showHidden)
     {
         if (instance == null) return null;
 
-        return instance.activeQuests[i];
+        int count = -1;
+        foreach (var q in instance.activeQuests)
+        {
+            if (q != null)
+            {
+                if (showHidden) count++;
+                else if (!q.hidden) count++;
+            }
+            if (count == i) return q;
+
+        }
+
+        return null;
     }
 
     public static float GetTime(Quest quest)

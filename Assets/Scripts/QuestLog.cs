@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using NaughtyAttributes;
 
 public class QuestLog : MonoBehaviour
 {
-    [SerializeField] private QuestDisplay questDisplayPrefab;
+    [SerializeField] private Image          backgroundElement;
+    [SerializeField] private RectTransform  questContainer;
+    [SerializeField] private QuestDisplay   questDisplayPrefab;
 
     void Start()
     {
@@ -20,14 +23,14 @@ public class QuestLog : MonoBehaviour
     [Button("Refresh")]
     void Refresh()
     {
-        int count = QuestManager.openQuests;
+        int count = QuestManager.openQuestsNotHidden;
         var questDisplays = new List<QuestDisplay>(GetComponentsInChildren<QuestDisplay>());
 
         if (questDisplays.Count < count)
         {
             for (int i = questDisplays.Count; i < count; i++)
             {
-                var newQD = Instantiate(questDisplayPrefab, transform);
+                var newQD = Instantiate(questDisplayPrefab, questContainer);
                 questDisplays.Add(newQD);
             }
         }
@@ -52,8 +55,13 @@ public class QuestLog : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            questDisplays[i].quest = QuestManager.GetActiveQuest(i);
+            questDisplays[i].quest = QuestManager.GetActiveQuest(i, false);
             questDisplays[i].Refresh();
+        }
+
+        if (backgroundElement)
+        {
+            backgroundElement.enabled = (count != 0);
         }
     }
 }

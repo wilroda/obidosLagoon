@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7061a6c8e897574d9b4672994da9c86, type: 3}
   m_Name: FindAllAnimals
   m_EditorClassIdentifier: 
+  _hidden: 0
   _displayName: Find All Animals
   _description: 'You must find all the animals!
 
