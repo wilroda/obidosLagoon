@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[AddComponentMenu("Actions/On Quest Failed")]
+[AddComponentMenu("Actions/_Conditions/On Quest Failed")]
 public class OnQuestFailed : OnQuestStateChange
 {
     public override bool IsComplete()

@@ -511,11 +511,11 @@ MonoBehaviour:
   forbiddenTokens: []
   questConditions: []
   who: {fileID: 36210371}
+  offsetY: 1
   text: Help me find my friends?
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0, g: 0, b: 0, a: 1}
   duration: 6
-  offsetY: 1
 --- !u!114 &36210377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2453,11 +2453,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 0}
+  offsetY: 0.1
   text: You found the pigeon!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
-  offsetY: 0.1
 --- !u!1001 &320119256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17620,11 +17620,11 @@ MonoBehaviour:
   forbiddenTokens: []
   questConditions: []
   who: {fileID: 36210371}
+  offsetY: 1
   text: Thank you for finding my friends!
   bgColor: {r: 1, g: 0, b: 0, a: 1}
   fgColor: {r: 0, g: 0, b: 0, a: 1}
   duration: 5
-  offsetY: 1
 --- !u!114 &2107195337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18135,11 +18135,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 0}
+  offsetY: 0.1
   text: You found the horse!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
-  offsetY: 0.1
 --- !u!1 &2606546427563569524
 GameObject:
   m_ObjectHideFlags: 0
@@ -18265,11 +18265,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 0}
+  offsetY: 0.1
   text: You found the flamingo!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
-  offsetY: 0.1
 --- !u!33 &3548083678717213830
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18478,11 +18478,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 0}
+  offsetY: 0.1
   text: You found the duck!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
-  offsetY: 0.1
 --- !u!114 &4236636647047003696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18501,6 +18501,7 @@ MonoBehaviour:
   forbiddenTokens: []
   questConditions: []
   who: {fileID: 0}
+  offsetY: 0.1
   text: 'Sneaky duck stole your frog token and ate it!
 
     You need to talk to the
@@ -18508,7 +18509,6 @@ MonoBehaviour:
   bgColor: {r: 0.9056604, g: 0.09825563, b: 0.2861567, a: 1}
   fgColor: {r: 0.8773585, g: 0.84417236, b: 0.120016046, a: 1}
   duration: 2
-  offsetY: 0.1
 --- !u!114 &4236636647047003697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18569,6 +18569,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1780380048833353362, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780380048833353362, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780380048833353362, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780380048833353362, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637020671831835075, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637020671831835075, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637020671831835075, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637020671831835075, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -18579,7 +18611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 430
+      value: 936
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -18587,9 +18619,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 247
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535066691340771637, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535066691340771637, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535066691340771637, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535066691340771637, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -18597,10 +18645,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defaults
       objectReference: {fileID: 0}
-    - target: {fileID: 6210815914324960417, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
-      propertyPath: rootObject
-      value: 
-      objectReference: {fileID: 1598756632}
     - target: {fileID: 6562079961329357257, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -18613,12 +18657,36 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
@@ -18649,6 +18717,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8082858150817757989, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082858150817757989, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082858150817757989, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082858150817757989, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8285772016869339908, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -18667,15 +18751,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709849094431186021, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.4565754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8709849094431186021, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7675129
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8709849094431186021, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.90756
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8709849094431186021, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18912,11 +18996,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 1994333226835225066}
+  offsetY: 0.2
   text: Ribbit! Ribbit!
   bgColor: {r: 0.6358099, g: 0.8490566, b: 0.62077254, a: 1}
   fgColor: {r: 0, g: 0, b: 0, a: 1}
   duration: 2
-  offsetY: 0.2
 --- !u!114 &7746514234045911903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18937,11 +19021,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 0}
+  offsetY: 0.1
   text: You found the frog!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
-  offsetY: 0.1
 --- !u!1 &8337647658470858064
 GameObject:
   m_ObjectHideFlags: 0
@@ -19055,11 +19139,11 @@ MonoBehaviour:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
   who: {fileID: 0}
+  offsetY: 0.1
   text: You found the cat!
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
-  offsetY: 0.1
 --- !u!4 &8917455238568687804
 Transform:
   m_ObjectHideFlags: 0
