@@ -100,7 +100,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 171676a492c6f6d4d938a0ca06aa29d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnFade: 1
 --- !u!114 &7647889799087808911
 MonoBehaviour:
   m_ObjectHideFlags: 0

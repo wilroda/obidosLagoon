@@ -32,7 +32,7 @@ public class SpeechManager : MonoBehaviour
         bubbles.RemoveAll((s) => s == null);
     }
 
-    public static SpeechBubble Say(Transform target, string text, Color bgColor, Color txtColor, float duration, float offsetY)
+    public static SpeechBubble Say(Transform target, string text, Color bgColor, Color txtColor, float duration, float offsetY, bool managed = true)
     {
         if (target == null)
         {
@@ -43,13 +43,16 @@ public class SpeechManager : MonoBehaviour
         }
 
         // Check if this is already talking
-        foreach (var s in instance.bubbles)
+        if (managed)
         {
-            if (s.target == target)
+            foreach (var s in instance.bubbles)
             {
-                s.Set(text, bgColor, txtColor);
-                s.SetDuration(duration);
-                return s;
+                if (s.target == target)
+                {
+                    s.Set(text, bgColor, txtColor);
+                    s.SetDuration(duration);
+                    return s;
+                }
             }
         }
 
@@ -58,7 +61,10 @@ public class SpeechManager : MonoBehaviour
         bubble.Set(target, offsetY, instance.mainCamera);
         bubble.SetDuration(duration);
 
-        instance.bubbles.Add(bubble);
+        if (managed)
+        {
+            instance.bubbles.Add(bubble);
+        }
 
         return bubble;
     }

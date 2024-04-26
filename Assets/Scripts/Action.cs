@@ -5,12 +5,22 @@ using UnityEngine;
 
 public abstract class Action : MonoBehaviour
 {
+    public enum QuestState { NotTaken, OnQuest, OnQuestOrCompleted, Completed };
+
+    [System.Serializable]
+    struct QuestCondition
+    {
+        public QuestState state;
+        public Quest      quest;
+    }
+
     [HorizontalLine(color: EColor.Blue)]
     public bool canRetrigger = false;
 
     [HorizontalLine(color: EColor.Red)]
     [SerializeField] private Token[] requiredTokens;
     [SerializeField] private Token[] forbiddenTokens;
+    [SerializeField] private QuestCondition[] questConditions;
 
     public bool CheckConditions()
     {
@@ -26,6 +36,29 @@ public abstract class Action : MonoBehaviour
             foreach (var t in forbiddenTokens)
             {
                 if (InventoryManager.HasToken(t)) return false;
+            }
+        }
+        if (questConditions != null)
+        {
+            foreach (var q in questConditions)
+            {
+                switch (q.state)
+                {
+                    case QuestState.NotTaken:
+                        if ((QuestManager.IsQuestActive(q.quest)) || (QuestManager.IsQuestComplete(q.quest))) return false;
+                        break;
+                    case QuestState.OnQuest:
+                        if (!QuestManager.IsQuestActive(q.quest)) return false;
+                        break;
+                    case QuestState.OnQuestOrCompleted:
+                        if ((!QuestManager.IsQuestActive(q.quest)) && (!QuestManager.IsQuestComplete(q.quest))) return false;
+                        break;
+                    case QuestState.Completed:
+                        if (!QuestManager.IsQuestComplete(q.quest)) return false;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 

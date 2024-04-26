@@ -43,7 +43,7 @@ public class InteractionManager : MonoBehaviour
                         {
                             if (speechBubble == null)
                             {
-                                speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY);
+                                speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY, false);
                             }
                             else
                             {

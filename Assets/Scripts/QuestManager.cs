@@ -47,9 +47,12 @@ public class QuestManager : MonoBehaviour
     {
         DOTween.SetTweensCapacity(1000, 100);
 
-        if (instance == null)
+        if ((instance == null) || (instance == this))
         {
             instance = this;
+
+            if (completedQuests == null) completedQuests = new List<Quest>();
+            if (completedQuests == null) completedQuests = new List<Quest>();
         }
         else
         {
@@ -98,5 +101,22 @@ public class QuestManager : MonoBehaviour
         instance.questTimer[quest] = Time.time;
 
         return 0.0f;
+    }
+
+    public static void Add(Quest quest)
+    {
+        if (!IsQuestActive(quest) && !IsQuestComplete(quest))
+        {
+            instance.activeQuests.Add(quest);
+        }
+    }
+
+    public static bool IsQuestActive(Quest quest)
+    {
+        return (instance.activeQuests.IndexOf(quest) != -1);
+    }
+    public static bool IsQuestComplete(Quest quest)
+    {
+        return (instance.completedQuests.IndexOf(quest) != -1);
     }
 }
