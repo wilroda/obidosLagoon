@@ -378,6 +378,7 @@ GameObject:
   - component: {fileID: 36210372}
   - component: {fileID: 36210376}
   - component: {fileID: 36210377}
+  - component: {fileID: 36210378}
   m_Layer: 0
   m_Name: Elefant
   m_TagString: Untagged
@@ -413,8 +414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 0
@@ -508,8 +507,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions: []
   who: {fileID: 36210371}
@@ -531,11 +528,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions: []
   quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
+--- !u!114 &36210378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36210370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 6532ffd7256928f4ea0179f05d76d915, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!1001 &36818806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2354,6 +2368,7 @@ GameObject:
   - component: {fileID: 304758010}
   - component: {fileID: 304758011}
   - component: {fileID: 304758012}
+  - component: {fileID: 304758013}
   m_Layer: 0
   m_Name: Pigeon
   m_TagString: Animal
@@ -2430,8 +2445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -2451,8 +2464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -2463,6 +2474,25 @@ MonoBehaviour:
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
+--- !u!114 &304758013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304758006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 489ce997d8ba70b419d710b828600033, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!1001 &320119256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6994,8 +7024,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 3
@@ -7018,8 +7046,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions: []
   scene: SampleGame2
@@ -17605,8 +17631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions: []
   objects:
@@ -17624,8 +17648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions: []
   who: {fileID: 36210371}
@@ -17906,6 +17928,7 @@ GameObject:
   - component: {fileID: 2331896287788383025}
   - component: {fileID: 2331896287788383026}
   - component: {fileID: 2331896287788383027}
+  - component: {fileID: 2331896287788383028}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Animal
@@ -17943,6 +17966,7 @@ GameObject:
   - component: {fileID: 3469287836600916779}
   - component: {fileID: 3469287836600916780}
   - component: {fileID: 3469287836600916781}
+  - component: {fileID: 3469287836600916782}
   m_Layer: 0
   m_Name: Flamingo
   m_TagString: Animal
@@ -18118,8 +18142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18139,8 +18161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18151,6 +18171,25 @@ MonoBehaviour:
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
+--- !u!114 &2331896287788383028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190805778044525125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 5e6f0643e2ccd094e8ad4f19239ed4dc, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!1 &2606546427563569524
 GameObject:
   m_ObjectHideFlags: 0
@@ -18250,8 +18289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18271,8 +18308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18283,6 +18318,25 @@ MonoBehaviour:
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
+--- !u!114 &3469287836600916782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148962758198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 1812622a8cf256b4d8afc4c6b1962ebc, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!33 &3548083678717213830
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18403,6 +18457,7 @@ GameObject:
   - component: {fileID: 4236636647047003695}
   - component: {fileID: 4236636647047003697}
   - component: {fileID: 4236636647047003696}
+  - component: {fileID: 4236636647047003698}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Animal
@@ -18463,8 +18518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -18486,8 +18539,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -18513,10 +18564,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
-  forbiddenTokens: []
-  tokenConditions: []
+  tokenConditions:
+  - state: 0
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions: []
   who: {fileID: 0}
   offsetY: 0.1
@@ -18540,14 +18590,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
-  forbiddenTokens: []
-  tokenConditions: []
+  tokenConditions:
+  - state: 0
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions: []
   token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
   extraTokens:
   - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+--- !u!114 &4236636647047003698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236636647047003690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 0fcda01ea96cef841bd35c59ad193751, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!1001 &4628582935643396565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18650,7 +18718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 936
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -18658,7 +18726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18714,7 +18782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960.00006
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18734,7 +18802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18890,6 +18958,7 @@ GameObject:
   - component: {fileID: 8446141424163314470}
   - component: {fileID: 8446141424163314471}
   - component: {fileID: 8446141424163314472}
+  - component: {fileID: 8446141424163314473}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Animal
@@ -18940,6 +19009,7 @@ GameObject:
   - component: {fileID: 7746514234045911902}
   - component: {fileID: 7746514234045911901}
   - component: {fileID: 7746514234045911903}
+  - component: {fileID: 7746514234045911904}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Animal
@@ -19042,8 +19112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -19066,8 +19134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions:
   - state: 0
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -19093,8 +19159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -19107,6 +19171,25 @@ MonoBehaviour:
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
+--- !u!114 &7746514234045911904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567077238389506983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 06b30e42d55365e4ab20b773ec097ceb, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!1 &8337647658470858064
 GameObject:
   m_ObjectHideFlags: 0
@@ -19194,8 +19277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -19215,8 +19296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
   tokenConditions: []
   questConditions:
   - state: 1
@@ -19227,6 +19306,25 @@ MonoBehaviour:
   bgColor: {r: 1, g: 1, b: 1, a: 1}
   fgColor: {r: 0.2009167, g: 0.4056604, b: 0.21554124, a: 1}
   duration: 4
+--- !u!114 &8446141424163314473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032867251989032178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11ab6e99e00edc47ac05de18a0bb811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 1
+  tokenConditions: []
+  questConditions: []
+  sound: {fileID: 8300000, guid: 10a9f07bdd949914a9ad94b4563570a1, type: 3}
+  type: 2
+  volume: {x: 1, y: 1}
+  pitch: {x: 0.8571876, y: 1.2261196}
 --- !u!4 &8917455238568687804
 Transform:
   m_ObjectHideFlags: 0

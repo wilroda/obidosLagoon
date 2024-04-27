@@ -1597,8 +1597,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 96372b77dafb38448a4addd967d8f4be, type: 2}
@@ -1637,8 +1638,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 3
@@ -1663,6 +1665,9 @@ MonoBehaviour:
   textBackground: {r: 1, g: 1, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   loop: 0
+  footstepSound: {fileID: 8300000, guid: 709da7d2c86b16f458e4e2d5c16f48c5, type: 3}
+  volume: {x: 0.642969, y: 0.642969}
+  pitch: {x: 0.89664894, y: 1.1973066}
 --- !u!1001 &202705308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7032,28 +7037,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 2
   scaleRange: {x: 0.75, y: 1.25}
---- !u!114 &624312603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624312598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf21447cc048f0c468814ff3c1e74f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
-  tokenConditions: []
-  questConditions: []
-  _tooltip: End
-  _asSpeech: 1
-  _offsetY: 1
-  _bgColor: {r: 1, g: 1, b: 1, a: 1}
-  _fgColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &624312605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7067,8 +7050,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   scene: SampleGame1
@@ -8784,8 +8768,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 9a4170b8a8bff06478af36802a134167, type: 2}
@@ -8803,8 +8788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   who: {fileID: 194796854}
@@ -8856,8 +8842,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -8875,8 +8862,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -10596,8 +10584,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -10615,8 +10604,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -10634,8 +10624,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 9a4170b8a8bff06478af36802a134167, type: 2}
@@ -10653,8 +10644,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   who: {fileID: 194796854}
@@ -13553,8 +13545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -13572,8 +13565,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   quest: {fileID: 11400000, guid: ac407f286ecdf464a914f64e4bb305b4, type: 2}
@@ -13590,8 +13584,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   who: {fileID: 0}
@@ -14606,7 +14601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 959.99994
+      value: 960.00006
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16710,8 +16705,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   who: {fileID: 0}
@@ -16733,8 +16729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
@@ -16773,8 +16770,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -17479,8 +17477,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   reason: You didn't find the rabbit in time!
@@ -17956,8 +17955,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
@@ -17981,8 +17981,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens: []
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 0
     token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
@@ -18002,9 +18003,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens:
-  - {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
-  forbiddenTokens: []
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 0
     token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
@@ -19018,9 +19019,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3981934011063942192, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
       insertIndex: -1
       addedObject: {fileID: 624312602}
-    - targetCorrespondingSourceObject: {fileID: 3981934011063942192, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 624312603}
     - targetCorrespondingSourceObject: {fileID: 3981934011063942192, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
       insertIndex: -1
       addedObject: {fileID: 624312605}

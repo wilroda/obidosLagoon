@@ -557,6 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reasonText: {fileID: 852346439749379552}
+  audioClip: {fileID: 8300000, guid: 4c84e0dd1459d364398170586c7666df, type: 3}
 --- !u!1 &4681402918369165180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1196,9 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   narratorBubble: {fileID: 7358184993436519101}
   speechBubblePrefab: {fileID: 2861088922120903833, guid: 3b5e48e686a80ea458351a316bac3624, type: 3}
+  bubbleSound: {fileID: 8300000, guid: 63c40049fec7d9d46bf09b32b4159e4c, type: 3}
+  bubbleVolume: {x: 0.6582734, y: 0.6582734}
+  bubblePitch: {x: 0.78357315, y: 1.2164268}
 --- !u!225 &4620172100729436880
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1685,7 +1689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4794569695210087979

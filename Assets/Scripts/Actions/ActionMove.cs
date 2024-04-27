@@ -34,12 +34,19 @@ public class ActionMove : Action
     private Color       textColor = Color.black;
     [SerializeField]
     private bool        loop = false;
+    [SerializeField]
+    private AudioClip   footstepSound;
+    [SerializeField, ShowIf("hasFootstepSound"), MinMaxSlider(0.5f, 2.0f)]
+    private Vector2     volume = Vector2.one;
+    [SerializeField, ShowIf("hasFootstepSound"), MinMaxSlider(0.5f, 2.0f)]
+    private Vector2     pitch = Vector2.one;
 
-    Transform           target;
+    Transform target;
     int                 waypointIndex = -1;
     float               movementAngle = 0.0f;
     float               lastOffsetY;
-    Vector3             originalPosition;
+
+    bool hasFootstepSound => footstepSound != null;
 
     private void Start()
     {
@@ -91,7 +98,24 @@ public class ActionMove : Action
 
         if (isMoving)
         {
+            float prevAngle = movementAngle;
             movementAngle += Time.deltaTime * Mathf.PI / animationSpeed;
+            if (movementAngle >= Mathf.PI * 2.0f)
+            {
+                movementAngle -= Mathf.PI * 2.0f;
+                if (footstepSound)
+                {
+                    SoundManager.PlaySound(SoundManager.Type.Fx, footstepSound, Random.Range(volume.x, volume.y), Random.Range(pitch.x, pitch.y));
+                }
+            }
+
+            if (footstepSound)
+            {
+                if ((prevAngle < Mathf.PI) && (movementAngle >= Mathf.PI))                    
+                {
+                    SoundManager.PlaySound(SoundManager.Type.Fx, footstepSound, Random.Range(volume.x, volume.y), Random.Range(pitch.x, pitch.y));
+                }
+            }
 
             if (followGround)
             {

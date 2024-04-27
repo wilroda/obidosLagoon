@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    [SerializeField] List<Quest>    activeQuests;
+    [SerializeField] private AudioClip      successSound;
+    [SerializeField] private List<Quest>    activeQuests;
     
     private List<Quest>                 completedQuests;
     private Dictionary<Quest, float>    questTimer;
@@ -81,6 +82,11 @@ public class QuestManager : MonoBehaviour
                         // worked on).
                         completedQuests.Add(q);
                         activeQuests.Remove(q);
+
+                        if (successSound != null)
+                        {
+                            SoundManager.PlaySound(SoundManager.Type.Fx, successSound);
+                        }
                     }
                     // Find actions to run
                     var qcs = FindObjectsByType<OnQuestStateChange>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);

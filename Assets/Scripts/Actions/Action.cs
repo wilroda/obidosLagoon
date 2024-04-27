@@ -23,10 +23,15 @@ public abstract class Action : MonoBehaviour
 
     [HorizontalLine(color: EColor.Blue)]
     public bool canRetrigger = false;
+    [SerializeField] private AudioClip interactionSound;
+    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] private Vector2 interactionVolume = Vector2.one;
+    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] private Vector2 interactionPitch = Vector2.one;
 
     [HorizontalLine(color: EColor.Red)]
     [SerializeField] private TokenCondition[] tokenConditions;
     [SerializeField] private QuestCondition[] questConditions;
+
+    bool hasSound => interactionSound != null;
 
     public bool CheckConditions()
     {
@@ -93,6 +98,11 @@ public abstract class Action : MonoBehaviour
             if (!canRetrigger)
             {
                 enabled = false;
+            }
+
+            if (interactionSound)
+            {
+                SoundManager.PlaySound(SoundManager.Type.Fx, interactionSound, Random.Range(interactionVolume.x, interactionVolume.y), Random.Range(interactionPitch.x, interactionPitch.y));
             }
         }
     }

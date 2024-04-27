@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed24872ae718f37409b5612710572fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  successSound: {fileID: 8300000, guid: 6d194534fd563f54d908d53c09beb496, type: 3}
   activeQuests: []
 --- !u!114 &8774857967392235418
 MonoBehaviour:
