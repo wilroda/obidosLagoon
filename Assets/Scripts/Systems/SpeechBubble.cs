@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class SpeechBubble : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class SpeechBubble : MonoBehaviour
     private CanvasScaler    canvasScaler;
     private float           timer;
     private float           offsetY;
+    private Tween           hideTween;
+    private Tween           showTween;
 
     public Transform target => _target;
 
@@ -50,6 +53,15 @@ public class SpeechBubble : MonoBehaviour
         }
         else
         {
+            if (hideTween == null)
+            {
+                hideTween = transform.DOScale(0.0f, 0.25f).SetEase(Ease.OutExpo);
+                if (showTween != null)
+                {
+                    showTween.Kill();
+                    showTween = null;
+                }
+            }
             canvas.alpha = Mathf.Clamp01(canvas.alpha - 4.0f * Time.deltaTime);
             if ((canvas.alpha <= 0.0f) && (destroyOnFade))
             {
@@ -86,6 +98,15 @@ public class SpeechBubble : MonoBehaviour
 
             LayoutRebuilder.ForceRebuildLayoutImmediate(text.rectTransform);
             LayoutRebuilder.ForceRebuildLayoutImmediate(bubble.rectTransform);
+
+            transform.localScale = Vector3.zero;
+            showTween = transform.DOScale(1.0f, 0.25f).SetEase(Ease.OutBack, 2.0f);
+
+            if (hideTween != null)
+            {
+                hideTween.Kill();
+                hideTween = null;
+            }
         }
     }
 }
