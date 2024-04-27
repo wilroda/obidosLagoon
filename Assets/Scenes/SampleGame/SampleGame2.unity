@@ -1599,6 +1599,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 96372b77dafb38448a4addd967d8f4be, type: 2}
   extraTokens: []
@@ -1638,6 +1639,7 @@ MonoBehaviour:
   canRetrigger: 1
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 3
     quest: {fileID: 11400000, guid: f8da959fb53f8fc48bdc10d968a28775, type: 2}
@@ -7045,6 +7047,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   _tooltip: End
   _asSpeech: 1
@@ -7066,6 +7069,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   scene: SampleGame1
 --- !u!1001 &625219266
@@ -8782,6 +8786,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 9a4170b8a8bff06478af36802a134167, type: 2}
   extraTokens: []
@@ -8800,6 +8805,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 194796854}
   offsetY: 0.1
@@ -8852,6 +8858,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 1840041762}
@@ -8870,6 +8877,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 624312598}
@@ -10590,6 +10598,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 1840041762}
@@ -10608,6 +10617,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 624312598}
@@ -10626,6 +10636,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 9a4170b8a8bff06478af36802a134167, type: 2}
   extraTokens: []
@@ -10644,6 +10655,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 194796854}
   offsetY: 0.1
@@ -13543,6 +13555,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 1840041762}
@@ -13561,6 +13574,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   quest: {fileID: 11400000, guid: ac407f286ecdf464a914f64e4bb305b4, type: 2}
 --- !u!114 &1573960744
@@ -13578,6 +13592,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 0}
   offsetY: 0.1
@@ -16697,6 +16712,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 0}
   offsetY: 0.1
@@ -16719,6 +16735,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
   extraTokens: []
@@ -16758,6 +16775,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 1906824415}
@@ -17463,6 +17481,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   reason: You didn't find the rabbit in time!
 --- !u!114 &1963239697
@@ -17938,8 +17957,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 1
   requiredTokens: []
-  forbiddenTokens:
-  - {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
+  forbiddenTokens: []
+  tokenConditions:
+  - state: 1
+    token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
   questConditions: []
   who: {fileID: 0}
   offsetY: 0.1
@@ -17960,9 +17981,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  requiredTokens:
-  - {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
+  requiredTokens: []
   forbiddenTokens: []
+  tokenConditions:
+  - state: 0
+    token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
   questConditions: []
   objects:
   - {fileID: 51502617}
@@ -17982,6 +18005,9 @@ MonoBehaviour:
   requiredTokens:
   - {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
   forbiddenTokens: []
+  tokenConditions:
+  - state: 0
+    token: {fileID: 11400000, guid: 2e1bdf21d27cc6e4ea1e6e414beaec3c, type: 2}
   questConditions: []
   who: {fileID: 0}
   offsetY: 0.1

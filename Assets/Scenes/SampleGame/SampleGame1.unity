@@ -415,6 +415,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 0
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -509,6 +510,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 36210371}
   offsetY: 1
@@ -531,6 +533,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
 --- !u!1001 &36818806
@@ -2429,6 +2432,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -2449,6 +2453,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -6991,6 +6996,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 3
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -7014,6 +7020,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   scene: SampleGame2
 --- !u!1001 &625219266
@@ -17600,6 +17607,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   objects:
   - {fileID: 624312598}
@@ -17618,6 +17626,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 36210371}
   offsetY: 1
@@ -18111,6 +18120,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -18131,6 +18141,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -18241,6 +18252,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -18261,6 +18273,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -18451,8 +18464,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 0
   requiredTokens: []
-  forbiddenTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  forbiddenTokens: []
+  tokenConditions:
+  - state: 1
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -18472,8 +18487,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 0
   requiredTokens: []
-  forbiddenTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  forbiddenTokens: []
+  tokenConditions:
+  - state: 1
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -18499,6 +18516,7 @@ MonoBehaviour:
   requiredTokens:
   - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   who: {fileID: 0}
   offsetY: 0.1
@@ -18525,6 +18543,7 @@ MonoBehaviour:
   requiredTokens:
   - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   forbiddenTokens: []
+  tokenConditions: []
   questConditions: []
   token: {fileID: 11400000, guid: d4d00a668a289634c8102a1ff9b7d487, type: 2}
   extraTokens:
@@ -18631,7 +18650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 936
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -18639,7 +18658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18695,7 +18714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18715,7 +18734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -19024,8 +19043,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 1
   requiredTokens: []
-  forbiddenTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  forbiddenTokens: []
+  tokenConditions:
+  - state: 1
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -19045,9 +19066,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
-  requiredTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  requiredTokens: []
   forbiddenTokens: []
+  tokenConditions:
+  - state: 0
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -19071,8 +19094,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canRetrigger: 1
   requiredTokens: []
-  forbiddenTokens:
-  - {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
+  forbiddenTokens: []
+  tokenConditions:
+  - state: 1
+    token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -19171,6 +19196,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -19191,6 +19217,7 @@ MonoBehaviour:
   canRetrigger: 0
   requiredTokens: []
   forbiddenTokens: []
+  tokenConditions: []
   questConditions:
   - state: 1
     quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}

@@ -34,7 +34,7 @@ public class RotateSmoothly : MonoBehaviour
     {
         if(!isRotating)
         {
-            StartCoroutine(RotateY(90f));
+            StartCoroutine(RotateY(-90f));
         }
     }
 
@@ -42,7 +42,7 @@ public class RotateSmoothly : MonoBehaviour
     {
         if(!isRotating)
         {
-            StartCoroutine(RotateY(-90f));
+            StartCoroutine(RotateY(90f));
         }
     }
 

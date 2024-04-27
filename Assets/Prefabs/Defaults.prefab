@@ -615,7 +615,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6210815914324960417}
         m_TargetAssemblyTypeName: RotateSmoothly, Assembly-CSharp
-        m_MethodName: RotateLeft
+        m_MethodName: RotateRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1002,7 +1002,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6210815914324960417}
         m_TargetAssemblyTypeName: RotateSmoothly, Assembly-CSharp
-        m_MethodName: RotateRight
+        m_MethodName: RotateLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1958,7 +1958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9208831027307924909, guid: 0c91d0e8b34d35d4f91e5140f3314d72, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 9208831027307924909, guid: 0c91d0e8b34d35d4f91e5140f3314d72, type: 3}
       propertyPath: m_AnchoredPosition.y
