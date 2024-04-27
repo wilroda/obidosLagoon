@@ -4,22 +4,10 @@ using UnityEngine;
 using NaughtyAttributes;
 
 [AddComponentMenu("Actions/Toggle Objects")]
-public class ActionToggleObjects : Action
+public class ActionToggleObjects : ActionShowHideObjects
 {
-    [HorizontalLine(color: EColor.Green)]
-    [SerializeField]
-    private GameObject[] objects;
-
-    protected override bool OnRun()
+    protected override bool GetFinalState(GameObject obj)
     {
-        if (objects != null)
-        {
-            foreach (var obj in objects)
-            {
-                obj.SetActive(!obj.activeSelf);
-            }
-        }
-
-        return true;
+        return !obj.activeSelf;
     }
 }
