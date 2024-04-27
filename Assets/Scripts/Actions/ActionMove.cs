@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
-using static UnityEditor.PlayerSettings;
 
 [AddComponentMenu("Actions/Move")]
 public class ActionMove : Action
@@ -86,6 +85,8 @@ public class ActionMove : Action
 
     public void Update()
     {
+        if (!Level.isActive) return;
+
         float distanceMoved = 0.0f;
 
         Vector3 pos = transform.position;

@@ -40,7 +40,9 @@ public class InteractionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool        clearTooltip = true;
+        if (!Level.isActive) return;
+
+        bool clearTooltip = true;
         CursorType  cursor = CursorType.Default;
 
         if (!gameOver.isGameOver)

@@ -24,6 +24,8 @@ public class RotateSmoothly : MonoBehaviour
 
     void Update()
     {
+        if (!Level.isActive) return;
+
         if ((!isRotating) && (!binoculars.usingBinoculars))
         {
             if (Input.GetKeyDown(KeyCode.A))

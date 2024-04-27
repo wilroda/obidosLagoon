@@ -25,6 +25,7 @@ public class QuestLog : MonoBehaviour
     {
         int count = QuestManager.openQuestsNotHidden;
         var questDisplays = new List<QuestDisplay>(GetComponentsInChildren<QuestDisplay>());
+        bool rebuild = false;
 
         if (questDisplays.Count < count)
         {
@@ -32,6 +33,7 @@ public class QuestLog : MonoBehaviour
             {
                 var newQD = Instantiate(questDisplayPrefab, questContainer);
                 questDisplays.Add(newQD);
+                rebuild = true;
             }
         }
         else if (questDisplays.Count > count)
@@ -50,18 +52,36 @@ public class QuestLog : MonoBehaviour
 #else
                 Destroy(questDisplays[i].gameObject);
 #endif
+                rebuild = true;
             }
         }
 
         for (int i = 0; i < count; i++)
         {
-            questDisplays[i].quest = QuestManager.GetActiveQuest(i, false);
+            var q = QuestManager.GetActiveQuest(i, false);
+            if (questDisplays[i].quest != q)
+            {
+                questDisplays[i].quest = q;
+                rebuild = true;
+            }
             questDisplays[i].Refresh();
         }
 
         if (backgroundElement)
         {
             backgroundElement.enabled = (count != 0);
+        }
+
+        if (rebuild)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(questDisplays[i].transform as RectTransform);
+            }
+            LayoutRebuilder.ForceRebuildLayoutImmediate(questContainer);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(transform as RectTransform);
+
+            Canvas.ForceUpdateCanvases();
         }
     }
 }

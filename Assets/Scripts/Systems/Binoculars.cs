@@ -33,6 +33,8 @@ public class Binoculars : MonoBehaviour
 
     void Update()
     {
+        if (!Level.isActive) return;
+
         if ((Input.GetKeyDown(KeyCode.B) || Input.GetMouseButtonDown(1)))
         {
             ToggleBinoculars();

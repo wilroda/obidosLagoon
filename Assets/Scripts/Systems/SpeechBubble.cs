@@ -34,6 +34,8 @@ public class SpeechBubble : MonoBehaviour
 
     private void Update()
     {
+        if (!Level.isActive) return;
+
         if (_target != null)
         {
             Vector2 screenPosition = mainCamera.WorldToViewportPoint(_target.position + Vector3.up * offsetY);

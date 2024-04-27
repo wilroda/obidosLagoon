@@ -11,6 +11,8 @@ public class OnDistance : MonoBehaviour
 
     private void Update()
     {
+        if (!Level.isActive) return;
+
         if (Vector3.Distance(transform.position, objectToCheck.position) <= distance)
         {
             Execute();

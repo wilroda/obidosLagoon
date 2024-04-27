@@ -13608,6 +13608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598756632}
+  - component: {fileID: 1598756633}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -13631,6 +13632,18 @@ Transform:
   - {fileID: 2085620166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598756633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598756631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb60f5c26ee58c14e869fa903e5895f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601725011
 GameObject:
   m_ObjectHideFlags: 0
@@ -17831,9 +17844,9 @@ MonoBehaviour:
   who: {fileID: 36210371}
   offsetY: 1
   text: Thank you for finding my friends!
-  bgColor: {r: 1, g: 0, b: 0, a: 1}
+  bgColor: {r: 0.9716981, g: 0.58866876, b: 0.5087665, a: 1}
   fgColor: {r: 0, g: 0, b: 0, a: 1}
-  duration: 5
+  duration: 3
 --- !u!114 &2107195337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18878,10 +18891,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1236099457208335112, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
-      propertyPath: activeQuests.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1780380048833353362, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -18978,10 +18987,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defaults
       objectReference: {fileID: 0}
-    - target: {fileID: 6210815914324960417, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
-      propertyPath: rootObject
-      value: 
-      objectReference: {fileID: 1598756632}
     - target: {fileID: 6562079961329357257, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

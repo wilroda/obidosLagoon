@@ -8424,6 +8424,11 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 3
   minRotation: -10
   maxRotation: 10
+--- !u!1 &819751784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4150639122759157543, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
+  m_PrefabInstance: {fileID: 8933436356716168666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &831729613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a4c3f992aa77a94abadd429f9d3e0e7, type: 3}
@@ -8911,7 +8916,9 @@ MonoBehaviour:
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
   tokenConditions: []
-  questConditions: []
+  questConditions:
+  - state: 1
+    quest: {fileID: 11400000, guid: ac407f286ecdf464a914f64e4bb305b4, type: 2}
   token: {fileID: 11400000, guid: 9a4170b8a8bff06478af36802a134167, type: 2}
   extraTokens: []
 --- !u!114 &868169026
@@ -8932,7 +8939,9 @@ MonoBehaviour:
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
   tokenConditions: []
-  questConditions: []
+  questConditions:
+  - state: 1
+    quest: {fileID: 11400000, guid: ac407f286ecdf464a914f64e4bb305b4, type: 2}
   who: {fileID: 194796854}
   offsetY: 0.1
   text: Thank you! Yummy carrots!
@@ -8987,7 +8996,9 @@ MonoBehaviour:
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
   tokenConditions: []
-  questConditions: []
+  questConditions:
+  - state: 1
+    quest: {fileID: 11400000, guid: ac407f286ecdf464a914f64e4bb305b4, type: 2}
   objects:
   - {fileID: 1840041762}
   effectDuration: 0.5
@@ -9009,7 +9020,9 @@ MonoBehaviour:
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
   tokenConditions: []
-  questConditions: []
+  questConditions:
+  - state: 1
+    quest: {fileID: 11400000, guid: ac407f286ecdf464a914f64e4bb305b4, type: 2}
   objects:
   - {fileID: 624312598}
   effectDuration: 0.5
@@ -13721,6 +13734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598756632}
+  - component: {fileID: 1598756633}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -13757,6 +13771,18 @@ Transform:
   - {fileID: 868169028}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598756633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598756631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb60f5c26ee58c14e869fa903e5895f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601725011
 GameObject:
   m_ObjectHideFlags: 0
@@ -14583,7 +14609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 936
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -14591,7 +14617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14621,10 +14647,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Defaults
       objectReference: {fileID: 0}
-    - target: {fileID: 6210815914324960417, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
-      propertyPath: rootObject
-      value: 
-      objectReference: {fileID: 1598756632}
     - target: {fileID: 6562079961329357257, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14651,7 +14673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16049,7 +16071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5558396527525845801, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
       propertyPath: m_LocalScale.y
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5558396527525845801, guid: 3cc8e550669c4dc4ea801be3905dd522, type: 3}
       propertyPath: m_LocalScale.z
@@ -17723,6 +17745,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3661946454858423709, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
   m_PrefabInstance: {fileID: 8933436356716168666}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1983655027 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6829001143267064827, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
+  m_PrefabInstance: {fileID: 8933436356716168666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1983655030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819751784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7cd08101958394696821e09bd55c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  cursor: 14
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
+  tokenConditions:
+  - state: 0
+    token: {fileID: 11400000, guid: 9b9f22ce1f246c74ab3810524c67ef7b, type: 2}
+  questConditions: []
+  loop: 1
+  animator: {fileID: 1983655027}
+  triggerName:
+  - open
+  - close
 --- !u!1 &1992231540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -19413,7 +19466,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3661946454858423709, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6544849647889000514}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4150639122759157543, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1983655030}
   m_SourcePrefab: {fileID: 100100000, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

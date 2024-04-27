@@ -20,6 +20,8 @@ public class ActionPlaySound: Action
 
     private void Update()
     {
+        if (!Level.isActive) return;
+
         if (playingAudio != null)
         {
             if ((playingAudio.clip != sound) || (!playingAudio.isPlaying))

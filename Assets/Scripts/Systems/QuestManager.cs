@@ -61,6 +61,8 @@ public class QuestManager : MonoBehaviour
 
     void Update()
     {
+        if (!Level.isActive) return;
+
         foreach (var q in activeQuests)
         {
             if (q != null)

@@ -19,11 +19,6 @@ public class GameOverUI : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    void Update()
-    {
-        
-    }
-
     public void Retry()
     {
         if (canvasGroup.alpha < 1) return;
