@@ -17808,6 +17808,7 @@ MonoBehaviour:
   questConditions: []
   objects:
   - {fileID: 624312598}
+  effectDuration: 0.5
 --- !u!114 &2107195336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18913,6 +18914,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3036778587458713639, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3637020671831835075, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -19003,7 +19008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960.00006
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
