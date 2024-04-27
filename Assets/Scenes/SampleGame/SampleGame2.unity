@@ -1653,9 +1653,14 @@ MonoBehaviour:
   - {fileID: 282750974}
   - {fileID: 2132112463}
   - {fileID: 752991148}
+  mode: 0
+  pauseBetweenWaypoints: {x: 0, y: 0}
   speed: 1
+  animationMode: 1
   animationSpeed: 0.25
   animationAmplitude: 0.1
+  animator: {fileID: 0}
+  animatorSpeedParameter: 0
   followGround: 1
   groundMask:
     serializedVersion: 2
@@ -1667,9 +1672,11 @@ MonoBehaviour:
   textBackground: {r: 1, g: 1, b: 1, a: 1}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   loop: 0
+  waypointOrder: 0
   footstepSound: {fileID: 8300000, guid: 709da7d2c86b16f458e4e2d5c16f48c5, type: 3}
   volume: {x: 0.642969, y: 0.642969}
   pitch: {x: 0.89664894, y: 1.1973066}
+  unitsPerStep: 0.25
 --- !u!1001 &202705308
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public abstract class Action : MonoBehaviour
     }
 
     [SerializeField, HorizontalLine(color: EColor.Blue)]
-    private bool canRetrigger = false;
+    protected bool canRetrigger = false;
     [SerializeField] 
     private InteractionManager.CursorType   cursor = InteractionManager.CursorType.Default;
     [SerializeField] 
