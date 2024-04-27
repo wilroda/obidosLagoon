@@ -3,11 +3,8 @@ A game about the Óbidos Lagoon
 
 # TODO
     
-**Object Click Actions:**
-- Play sound
-         
+        
 **UI:**
-- Mouse over interactable objects, makes the cursor change;
 - Mission Accomplished Menu 
 - Start Menu
 - Level Selection Menu

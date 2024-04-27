@@ -25,13 +25,19 @@ public class SceneHandler : MonoBehaviour
 
     public static void GotoScene(string name)
     {
-        DOTween.KillAll();
-        SceneManager.LoadScene(name);
+        Fader.FadeOut(0.5f, () =>
+        {
+            DOTween.KillAll();
+            SceneManager.LoadScene(name);
+        });
     }
 
     public static void GotoScene(int id)
     {
-        DOTween.KillAll();
-        SceneManager.LoadScene(id);
+        Fader.FadeOut(0.5f, () =>
+        {
+            DOTween.KillAll();
+            SceneManager.LoadScene(id);
+        });
     }
 }

@@ -7,7 +7,7 @@ public class InteractionManager : MonoBehaviour
 {
     public enum CursorType { Default = 0, Eye = 1, Axe = 2, Pickaxe = 3, Shovel = 4, Sword = 5, Zoom = 6, Target = 7, 
                              Talk = 8, Hammer = 9, 
-                             SciFiPointer = 10, CartoonPointer = 11, TrianglePointer = 12 }
+                             SciFiPointer = 10, CartoonPointer = 11, TrianglePointer = 12, Walk = 13 }
 
     [SerializeField] private LayerMask      ignoreLayers;
     [SerializeField] private Camera         mainCamera;
