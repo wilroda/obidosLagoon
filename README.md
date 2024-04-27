@@ -11,7 +11,6 @@ A game about the Óbidos Lagoon
 
 **Animations:**
 - Using scripted tweens that can be added to objects and parameterized.
-- Popup animation for speech bubbles
 - Text appears over time, instead of all at once
 - Show/Hide quest log with animation
 
@@ -27,4 +26,3 @@ A game about the Óbidos Lagoon
 **Assets:**
 - Organize asset list
 - Setup easy to use prefabs from the current asset list
-- Add human characters
