@@ -55,9 +55,50 @@ public abstract class ActionShowHideObjects : Action
     }
 
     protected abstract bool GetFinalState(GameObject obj);
+    protected bool GetCurrentState(GameObject obj)
+    {
+        ParticleSystem ps = obj.GetComponent<ParticleSystem>();
+        if (ps != null)
+        {
+            var main = ps.main;
+            if (main.loop)
+            {
+                return obj.activeSelf && ps.emission.enabled;
+            }
+            else
+            {
+                return obj.activeSelf && ps.isPlaying;
+            }
+        }
+
+        return obj.activeSelf;
+    }
+
 
     protected void Appear(GameObject obj, Vector3 originalScale)
     {
+        var ps = obj.GetComponent<ParticleSystem>();
+        if (ps != null)
+        {
+            // This is a particle system, need to check if it is looping
+            obj.SetActive(true);
+
+            var main = ps.main;
+            if (main.loop)
+            {
+                // Is looping, enable emission 
+                var emission = ps.emission;
+                emission.enabled = true;
+            }
+            else
+            {
+                // Is not looping, play it
+                ps.Play();
+            }
+
+            return;
+        }
+
         if (effectDuration == 0.0f)
         {
             obj.SetActive(true);
@@ -77,6 +118,25 @@ public abstract class ActionShowHideObjects : Action
 
     protected void Disappear(GameObject obj, Vector3 originalScale)
     {
+        var ps = obj.GetComponent<ParticleSystem>();
+        if (ps != null)
+        {
+            var main = ps.main;
+            if (main.loop)
+            {
+                // Is looping, enable emission 
+                var emission = ps.emission;
+                emission.enabled = false;
+            }
+            else
+            {
+                // Is not looping, play it
+                ps.Stop();
+            }
+
+            return;
+        }
+
         if (effectDuration == 0.0f)
         {
             obj.SetActive(false);

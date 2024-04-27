@@ -8,6 +8,6 @@ public class ActionToggleObjects : ActionShowHideObjects
 {
     protected override bool GetFinalState(GameObject obj)
     {
-        return !obj.activeSelf;
+        return !GetCurrentState(obj);
     }
 }
