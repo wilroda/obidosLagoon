@@ -10,28 +10,34 @@ public class RotateSmoothly : MonoBehaviour
 
     private Binoculars  binoculars;
     private bool        isRotating = false;
-
+    private GameOverUI  gameOver;
 
     private void Start()
     {
         binoculars = FindObjectOfType<Binoculars>();
+        gameOver = FindObjectOfType<GameOverUI>(true);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) && !isRotating && !binoculars.usingBinoculars)
+        if ((!isRotating) && (!binoculars.usingBinoculars))
         {
-            RotateLeft();
-        }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                RotateLeft();
+            }
 
-        if (Input.GetKeyDown(KeyCode.D) && !isRotating && !binoculars.usingBinoculars)
-        {
-            RotateRight();
-        } 
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                RotateRight();
+            }
+        }
     }
 
     public void RotateRight()
     {
+        if (gameOver.isGameOver) return;
+
         if(!isRotating)
         {
             StartCoroutine(RotateY(-90f));
@@ -40,7 +46,9 @@ public class RotateSmoothly : MonoBehaviour
 
     public void RotateLeft()
     {
-        if(!isRotating)
+        if (gameOver.isGameOver) return;
+
+        if (!isRotating)
         {
             StartCoroutine(RotateY(90f));
         }

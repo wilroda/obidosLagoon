@@ -14495,6 +14495,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1236099457208335112, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      propertyPath: activeQuests.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f8da959fb53f8fc48bdc10d968a28775, type: 2}
+    - target: {fileID: 1236099457208335112, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: activeQuests.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 62b33371fe6030c489cc7a8ee571e1f0, type: 2}
@@ -14588,7 +14592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6007534830823606915, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6129732785377559674, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_Name
@@ -14632,15 +14636,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 164.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -14648,7 +14652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6934635508589827734, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7200077391597530491, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -19075,7 +19079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  cursor: 0
+  cursor: 16
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
@@ -19243,6 +19247,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3287653284037122863, guid: 917a9bdff3ab7784f9c64cfce40db107, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6544849647889000516}
+    - targetCorrespondingSourceObject: {fileID: 3287653284037122863, guid: 917a9bdff3ab7784f9c64cfce40db107, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6544849647889000518}
   m_SourcePrefab: {fileID: 100100000, guid: 917a9bdff3ab7784f9c64cfce40db107, type: 3}
 --- !u!4 &6544849647889000514 stripped
 Transform:
@@ -19267,7 +19274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
-  cursor: 7
+  cursor: 16
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
@@ -19275,6 +19282,28 @@ MonoBehaviour:
   questConditions: []
   token: {fileID: 11400000, guid: ac4db454f94589e429b37b7025f5ad19, type: 2}
   extraTokens: []
+--- !u!114 &6544849647889000518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6544849647889000515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6db3567491e0446ba09994fa4bacdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
+  tokenConditions: []
+  questConditions: []
+  objects:
+  - {fileID: 6544849647889000515}
+  effectDuration: 0.5
 --- !u!1001 &8933436356716168666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19283,6 +19312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1598756632}
     m_Modifications:
+    - target: {fileID: 2161977984185054626, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
+      propertyPath: cursor
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 2161977984185054626, guid: 17568c741c04f9f438e62f9f4876e2e0, type: 3}
       propertyPath: tokenConditions.Array.size
       value: 1

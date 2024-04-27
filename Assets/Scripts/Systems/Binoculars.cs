@@ -20,12 +20,15 @@ public class Binoculars : MonoBehaviour
     float       zoomSize = 0f;
     Vector3     worldPosition;
     Coroutine   zoomCR;
+    GameOverUI  gameOver;
 
     public bool usingBinoculars => _usingBinoculars;
 
     void Start()
     {
         zoomSize = binocularCamera.orthographicSize;
+
+        gameOver = FindObjectOfType<GameOverUI>(true);
     }
 
     void Update()
@@ -51,6 +54,7 @@ public class Binoculars : MonoBehaviour
 
     public void ToggleBinoculars()
     {
+        if (gameOver.isGameOver) return;
         if (zoomCR != null) return;
 
         if (_usingBinoculars) BinocularsViewOff();
@@ -59,14 +63,18 @@ public class Binoculars : MonoBehaviour
 
     public void BinocularsViewOn()
     {
+        if (gameOver.isGameOver) return;
         if (_usingBinoculars) return;
+
         _usingBinoculars = true;
         zoomCR = StartCoroutine(ZoomIn(zoomInDuration));        
     }
 
     public void BinocularsViewOff()
     {
+        if (gameOver.isGameOver) return;
         if (!_usingBinoculars) return;
+
         _usingBinoculars = false;
         zoomCR = StartCoroutine(ZoomOut(zoomOutDuration));        
     }
