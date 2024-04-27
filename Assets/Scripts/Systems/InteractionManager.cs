@@ -5,8 +5,13 @@ using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
 {
-    [SerializeField] private LayerMask  ignoreLayers;
-    [SerializeField] private Camera     mainCamera;
+    public enum CursorType { Default = 0, Eye = 1, Axe = 2, Pickaxe = 3, Shovel = 4, Sword = 5, Zoom = 6, Target = 7, 
+                             Talk = 8, Hammer = 9, 
+                             SciFiPointer = 10, CartoonPointer = 11, TrianglePointer = 12 }
+
+    [SerializeField] private LayerMask      ignoreLayers;
+    [SerializeField] private Camera         mainCamera;
+    [SerializeField] private Texture2D[]    cursors;
 
     private SpeechBubble    speechBubble;
     private GameOverUI      gameOver;
@@ -34,7 +39,8 @@ public class InteractionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool clearTooltip = true;
+        bool        clearTooltip = true;
+        CursorType  cursor = CursorType.Default;
 
         if (!gameOver.isGameOver)
         {
@@ -71,10 +77,12 @@ public class InteractionManager : MonoBehaviour
                         }
                     }
 
+                    // Check if object has actions
+                    var actions = h.collider.GetComponents<Action>();
+
                     if (Input.GetMouseButtonDown(0))
                     {
                         // Check if object has actions
-                        var actions = h.collider.GetComponents<Action>();
                         if (actions.Length > 0)
                         {
                             foreach (var action in actions)
@@ -90,12 +98,40 @@ public class InteractionManager : MonoBehaviour
                             // No actions, might want to do something here (play a sound or something)
                         }
                     }
+                    else
+                    {
+                        // Check if object has actions
+                        if (actions.Length > 0)
+                        {
+                            foreach (var action in actions)
+                            {
+                                if (action.enabled)
+                                {
+                                    if (action.CheckConditions())
+                                    {
+                                        var tmp = action.GetCursor();
+                                        if (tmp != CursorType.Default)
+                                        {
+                                            cursor = tmp;
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            cursor = CursorType.Hammer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
 
                     // Don't check anymore objects (they're hidden behind this one)
                     break;
                 }
             }
         }
+
+        Cursor.SetCursor(cursors[(int)cursor], new Vector2(22.0f, 22.0f), CursorMode.Auto);
 
         if (clearTooltip)
         {

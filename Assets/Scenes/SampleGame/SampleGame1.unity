@@ -414,6 +414,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 0
@@ -507,6 +511,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 8
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   who: {fileID: 36210371}
@@ -528,6 +536,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   quest: {fileID: 11400000, guid: d8cfa2eb32a4a8b44bf993f864f7eebb, type: 2}
@@ -544,6 +556,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 6532ffd7256928f4ea0179f05d76d915, type: 3}
@@ -2445,6 +2461,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -2464,6 +2484,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -2487,6 +2511,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 489ce997d8ba70b419d710b828600033, type: 3}
@@ -7024,6 +7052,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 3
@@ -7046,6 +7078,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   scene: SampleGame2
@@ -11895,6 +11931,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
   m_PrefabInstance: {fileID: 1296660963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1302213747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302213748}
+  - component: {fileID: 1302213749}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302213748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302213747}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2105010392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1302213749
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302213747}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -6223100455823413932, guid: a3870452f534ab94a968d76ddcf4ad01, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 03e5a90fd406cba459bb219b36cbb055, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1334146828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 61070433297bae94b94f94c2f2d282aa, type: 3}
@@ -17599,6 +17763,11 @@ MonoBehaviour:
   timeBetweenRotateIntervals: 3
   minRotation: -10
   maxRotation: 10
+--- !u!4 &2105010392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6285269784574963559, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+  m_PrefabInstance: {fileID: 4628582935643396565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2107195334
 GameObject:
   m_ObjectHideFlags: 0
@@ -17631,6 +17800,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   objects:
@@ -17648,6 +17821,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   who: {fileID: 36210371}
@@ -18142,6 +18319,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18161,6 +18342,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18184,6 +18369,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 5e6f0643e2ccd094e8ad4f19239ed4dc, type: 3}
@@ -18289,6 +18478,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18308,6 +18501,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -18331,6 +18528,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 1812622a8cf256b4d8afc4c6b1962ebc, type: 3}
@@ -18518,6 +18719,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -18539,6 +18744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -18564,6 +18773,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 0
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -18590,6 +18803,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 0
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -18610,6 +18827,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 0fcda01ea96cef841bd35c59ad193751, type: 3}
@@ -18934,7 +19155,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6285269784574963559, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1302213748}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
 --- !u!33 &4959151414723400287
@@ -19112,6 +19336,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -19134,6 +19362,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 0
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -19159,6 +19391,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions:
   - state: 1
     token: {fileID: 11400000, guid: 8de1c9b790f2a3c48acbe82f9811c335, type: 2}
@@ -19184,6 +19420,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 06b30e42d55365e4ab20b773ec097ceb, type: 3}
@@ -19277,6 +19517,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -19296,6 +19540,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions:
   - state: 1
@@ -19319,6 +19567,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cursor: 0
+  interactionSound: {fileID: 0}
+  interactionVolume: {x: 1, y: 1}
+  interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
   sound: {fileID: 8300000, guid: 10a9f07bdd949914a9ad94b4563570a1, type: 3}

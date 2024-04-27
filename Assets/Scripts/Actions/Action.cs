@@ -21,11 +21,16 @@ public abstract class Action : MonoBehaviour
         public Quest quest;
     }
 
-    [HorizontalLine(color: EColor.Blue)]
-    public bool canRetrigger = false;
-    [SerializeField] private AudioClip interactionSound;
-    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] private Vector2 interactionVolume = Vector2.one;
-    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] private Vector2 interactionPitch = Vector2.one;
+    [SerializeField, HorizontalLine(color: EColor.Blue)]
+    private bool canRetrigger = false;
+    [SerializeField] 
+    private InteractionManager.CursorType   cursor = InteractionManager.CursorType.Default;
+    [SerializeField] 
+    private AudioClip interactionSound;
+    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] 
+    private Vector2 interactionVolume = Vector2.one;
+    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] 
+    private Vector2 interactionPitch = Vector2.one;
 
     [HorizontalLine(color: EColor.Red)]
     [SerializeField] private TokenCondition[] tokenConditions;
@@ -108,4 +113,9 @@ public abstract class Action : MonoBehaviour
     }
 
     protected abstract bool OnRun();
+
+    public InteractionManager.CursorType GetCursor()
+    {
+        return cursor;
+    }
 }
