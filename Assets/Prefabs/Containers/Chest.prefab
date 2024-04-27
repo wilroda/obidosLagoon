@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,9 +77,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8512612203935729198}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2161977984185054626}
     - targetCorrespondingSourceObject: {fileID: -1751480086967751553, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5162414349728373660}
@@ -145,30 +142,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialState: close
   animationPercentage: 1
---- !u!114 &2161977984185054626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4150639122759157543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db7cd08101958394696821e09bd55c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canRetrigger: 1
-  cursor: 9
-  interactionSound: {fileID: 0}
-  interactionVolume: {x: 1, y: 1}
-  interactionPitch: {x: 1, y: 1}
-  tokenConditions: []
-  questConditions: []
-  loop: 1
-  animator: {fileID: 6829001143267064827}
-  triggerName:
-  - open
-  - close
 --- !u!1 &5974622762536719881 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1751480086967751553, guid: 2b730704f83f67244a6d8b0d278a526b, type: 3}

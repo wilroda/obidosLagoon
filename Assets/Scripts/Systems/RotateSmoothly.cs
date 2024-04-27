@@ -16,6 +16,10 @@ public class RotateSmoothly : MonoBehaviour
     {
         binoculars = FindObjectOfType<Binoculars>();
         gameOver = FindObjectOfType<GameOverUI>(true);
+        if (rootObject == null)
+        {
+            rootObject = FindObjectOfType<Level>().transform;
+        }
     }
 
     void Update()
