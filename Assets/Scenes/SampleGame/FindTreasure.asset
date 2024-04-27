@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7061a6c8e897574d9b4672994da9c86, type: 3}
+  m_Name: FindTreasure
+  m_EditorClassIdentifier: 
+  _hidden: 0
+  _displayName: Find Treasure (optional)
+  _description: 
+  _items:
+  - token: {fileID: 11400000, guid: ac4db454f94589e429b37b7025f5ad19, type: 2}
+    quantity: 1
+  _timeLimit: 0
+  _timeInSeconds: 0

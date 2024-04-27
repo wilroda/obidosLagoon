@@ -33,7 +33,10 @@ public class QuestDisplay : MonoBehaviour
         }
 
         questName.text = quest.displayName;
+
         questDescription.text = quest.description;
+        questDescription.gameObject.SetActive(quest.description != "");
+
         contentSizeFitter.SetLayoutVertical();
 
         timeElement.gameObject.SetActive(quest.hasTimeLimit);
