@@ -8,7 +8,8 @@ public class InteractionManager : MonoBehaviour
     public enum CursorType { Default = 0, Eye = 1, Axe = 2, Pickaxe = 3, Shovel = 4, Sword = 5, Zoom = 6, Target = 7, 
                              Talk = 8, Hammer = 9, 
                              SciFiPointer = 10, CartoonPointer = 11, TrianglePointer = 12, 
-                             Walk = 13, Open = 14, Interact = 15, Grab = 16 }
+                             Walk = 13, Open = 14, Interact = 15, Grab = 16,
+                             Custom1 = 17, Custom2 = 18, Custom3 = 19, Custom4 = 20 }
 
     [SerializeField] private LayerMask      ignoreLayers;
     [SerializeField] private Camera         mainCamera;
