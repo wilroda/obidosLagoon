@@ -12,7 +12,7 @@ public abstract class Action : MonoBehaviour
     public struct TokenCondition
     {
         public TokenState state;
-        public Token      token;
+        public Token token;
     }
     [System.Serializable]
     public struct QuestCondition
@@ -23,13 +23,17 @@ public abstract class Action : MonoBehaviour
 
     [SerializeField, HorizontalLine(color: EColor.Blue)]
     protected bool canRetrigger = false;
-    [SerializeField] 
-    private InteractionManager.CursorType   cursor = InteractionManager.CursorType.Default;
-    [SerializeField] 
+    [SerializeField]
+    protected bool cooldown = false;
+    [SerializeField, ShowIf("cooldown")]
+    protected float cooldownTimer = 0.0f;
+    [SerializeField]
+    private InteractionManager.CursorType cursor = InteractionManager.CursorType.Default;
+    [SerializeField]
     private AudioClip interactionSound;
-    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] 
+    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")]
     private Vector2 interactionVolume = Vector2.one;
-    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")] 
+    [SerializeField, MinMaxSlider(0.1f, 2.0f), ShowIf("hasSound")]
     private Vector2 interactionPitch = Vector2.one;
 
     [HorizontalLine(color: EColor.Red)]
@@ -37,6 +41,9 @@ public abstract class Action : MonoBehaviour
     [SerializeField] private QuestCondition[] questConditions;
 
     bool hasSound => interactionSound != null;
+
+    private int     runCount = 0;
+    private float   lastTriggered;
 
     public bool CheckConditions()
     {
@@ -91,8 +98,26 @@ public abstract class Action : MonoBehaviour
         return true;
     }
 
+    public bool canRun
+    {
+        get
+        {
+            if ((runCount > 0) && (cooldown) && (canRetrigger))
+            {
+                if ((Time.time - lastTriggered) < cooldownTimer) return false;
+            }
+
+            return enabled && ((runCount == 0) || ((canRetrigger) && (runCount > 0)));
+        }
+    }
+
     public void Run()
     {
+        if (!canRun)
+        {
+            return;
+        }
+
         if (!CheckConditions())
         {
             return;
@@ -100,10 +125,8 @@ public abstract class Action : MonoBehaviour
 
         if (OnRun())
         {
-            if (!canRetrigger)
-            {
-                enabled = false;
-            }
+            runCount++;
+            lastTriggered = Time.time;
 
             if (interactionSound)
             {

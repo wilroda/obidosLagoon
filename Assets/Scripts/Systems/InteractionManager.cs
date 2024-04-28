@@ -90,7 +90,7 @@ public class InteractionManager : MonoBehaviour
                         {
                             foreach (var action in actions)
                             {
-                                if (action.enabled)
+                                if (action.canRun)
                                 {
                                     action.Run();
                                 }
@@ -108,7 +108,7 @@ public class InteractionManager : MonoBehaviour
                         {
                             foreach (var action in actions)
                             {
-                                if (action.enabled)
+                                if (action.canRun)
                                 {
                                     if (action.CheckConditions())
                                     {

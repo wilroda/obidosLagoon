@@ -9,16 +9,21 @@ public class ActionMove : Action
     public enum Mode { Click, Auto };
     public enum AnimMode { None, Bounce, Animator };
     public enum WaypointOrder { Sequential, Random };
+    public enum DirectionMode { None, Movement, InterpolateWithSpeed, InterpolateOverTime };
 
     [HorizontalLine(color: EColor.Green)]
     [SerializeField]
-    private Transform[] waypoints;
+    private Transform[]     waypoints;
     [SerializeField]
-    private Mode        mode = Mode.Click;
+    private Mode            mode = Mode.Click;
     [SerializeField, ShowIf("isAuto"), MinMaxSlider(0.0f, 10.0f)]
-    private Vector2     pauseBetweenWaypoints = Vector2.zero;
+    private Vector2         pauseBetweenWaypoints = Vector2.zero;
     [SerializeField]
-    private float       speed = 1.0f;
+    private float           speed = 1.0f;
+    [SerializeField]
+    private DirectionMode   directionMode = DirectionMode.Movement;
+    [SerializeField, ShowIf("needRotationSpeed")]
+    private float           rotateSpeed = 360.0f;
     [SerializeField]
     private AnimMode    animationMode = AnimMode.None;
     [SerializeField, ShowIf("animationIsBounce")]
@@ -70,6 +75,7 @@ public class ActionMove : Action
     bool animationIsBounce => animationMode == AnimMode.Bounce;
     bool animationIsAnimator => animationMode == AnimMode.Animator;
     bool hasFootstepSoundAndAnimNotBounce => hasFootstepSound && (animationMode != AnimMode.Bounce);
+    bool needRotationSpeed => (directionMode == DirectionMode.Movement) || (directionMode == DirectionMode.InterpolateWithSpeed);
 
     private void Start()
     {
@@ -77,7 +83,7 @@ public class ActionMove : Action
 
         lastOffsetY = 0.0f;
 
-        if (mode == Mode.Auto)
+        if ((mode == Mode.Auto) || (loop))
         {
             canRetrigger = true;
         }
@@ -88,6 +94,8 @@ public class ActionMove : Action
         if (!Level.isActive) return;
 
         float distanceMoved = 0.0f;
+
+        Quaternion rotation = transform.rotation;
 
         Vector3 pos = transform.position;
         pos.y -= lastOffsetY;
@@ -106,11 +114,11 @@ public class ActionMove : Action
             if (distanceMoved > 1e-6)
             {
                 dir.Normalize();
-                transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+                rotation = Quaternion.LookRotation(dir, Vector3.up);
             }
             else
             {
-                transform.rotation = target.rotation;
+                rotation = target.rotation;
             }
 
             pos = newPos;
@@ -118,7 +126,7 @@ public class ActionMove : Action
         else
         {
             pos = target.position;
-            transform.rotation = target.rotation;
+            rotation = target.rotation;
 
             lastOffsetY = 0.0f;
 
@@ -194,7 +202,24 @@ public class ActionMove : Action
             animator.SetFloat(animatorSpeedParameter, (distanceMoved / Time.deltaTime) / speed);
         }
 
+        switch (directionMode)
+        {
+            case DirectionMode.None:
+                rotation = transform.rotation;
+                break;
+            case DirectionMode.Movement:
+                // Already set before, nothing to do here
+                break;
+            case DirectionMode.InterpolateWithSpeed:
+            case DirectionMode.InterpolateOverTime:
+                rotation = target.rotation;
+                break;
+            default:
+                break;
+        }
+
         transform.position = pos;
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, Time.deltaTime * rotateSpeed);
     }
 
     float GetGroundY(Vector3 p)
@@ -261,6 +286,16 @@ public class ActionMove : Action
         {
             waypointIndex = Random.Range(0, waypoints.Length);
             target = waypoints[waypointIndex];
+        }
+
+        if (directionMode == DirectionMode.InterpolateOverTime)
+        {
+            float dist = Vector3.Distance(transform.position, target.position);
+            if (dist > 1e-6)
+            {
+                float angle = Quaternion.Angle(transform.rotation, target.rotation);
+                rotateSpeed = (angle * speed) / Vector3.Distance(transform.position, target.position);
+            }
         }
 
         if ((checkCollisions) && (!end))
