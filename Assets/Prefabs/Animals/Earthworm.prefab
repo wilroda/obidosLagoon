@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8385361489261986785}
   - component: {fileID: 554516271620548363}
   - component: {fileID: 8255081459986975202}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6397008178804876755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Earthworm
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3323844991651844814}
   - component: {fileID: 4758679577999954558}
   - component: {fileID: 4451597327399185851}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt577
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4815904245148594921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrownBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

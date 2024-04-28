@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8425610158158587284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Batto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 484945757692315171}
   - component: {fileID: 6311068922552674099}
   - component: {fileID: 3554521587035987675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

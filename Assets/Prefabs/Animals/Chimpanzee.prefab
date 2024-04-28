@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 339792937339881689}
   - component: {fileID: 643618646138406160}
   - component: {fileID: 1769974456470038504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5344366878411218956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chimpanzee
   m_TagString: Untagged
   m_Icon: {fileID: 0}

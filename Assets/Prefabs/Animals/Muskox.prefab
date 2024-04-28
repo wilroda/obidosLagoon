@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5125757803916506445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Muskox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 9200987235970948397}
   - component: {fileID: 8287323184956229485}
   - component: {fileID: 3326450752687769416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8939070418254464491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LabradorPuppy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 866595845118914249}
   - component: {fileID: 2772257506671004216}
   - component: {fileID: 2096248509975902628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

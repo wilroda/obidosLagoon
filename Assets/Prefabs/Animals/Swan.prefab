@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 683191883062776859}
   - component: {fileID: 3282258043483686986}
   - component: {fileID: 3986692584240548597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9178313427468605181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Swan
   m_TagString: Untagged
   m_Icon: {fileID: 0}

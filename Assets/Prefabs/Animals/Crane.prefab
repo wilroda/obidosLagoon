@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5553171450393092831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4149165188293881353}
   - component: {fileID: 3024402090747694921}
   - component: {fileID: 7719742423847927710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

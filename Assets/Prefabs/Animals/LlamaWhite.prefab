@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6711131926332301663}
   - component: {fileID: 6375379390738873747}
   - component: {fileID: 6767502993361390054}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt601
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8637121282111477895}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LlamaWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

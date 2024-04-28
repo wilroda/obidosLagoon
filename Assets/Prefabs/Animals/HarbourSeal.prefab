@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1788753490665119688}
   - component: {fileID: 8154442156743602446}
   - component: {fileID: 8151497064615318864}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2196566767358445593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HarbourSeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}

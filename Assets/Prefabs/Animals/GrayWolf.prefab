@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4239447463974800127}
   - component: {fileID: 6313514122973629509}
   - component: {fileID: 7951771238280319753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 749521703765661901}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrayWolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}

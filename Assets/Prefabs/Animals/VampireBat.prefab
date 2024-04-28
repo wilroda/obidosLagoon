@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2645993465301556290}
   - component: {fileID: 3130470920829037111}
   - component: {fileID: 595401993063970931}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7585779935408854799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VampireBat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

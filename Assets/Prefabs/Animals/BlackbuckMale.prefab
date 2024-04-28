@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3736990163736710112}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlackbuckMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5183628223546928949}
   - component: {fileID: 5150578781333636328}
   - component: {fileID: 7046701182695649263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt596
   m_TagString: Untagged
   m_Icon: {fileID: 0}

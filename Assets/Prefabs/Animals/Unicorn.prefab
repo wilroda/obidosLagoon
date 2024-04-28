@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 966509305043583271}
   - component: {fileID: 8547065329756441616}
   - component: {fileID: 6107229099266719108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3209234411465810048}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Unicorn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

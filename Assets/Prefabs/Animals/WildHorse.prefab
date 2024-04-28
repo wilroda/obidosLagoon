@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4838150295786585448}
   - component: {fileID: 5650697199401537400}
   - component: {fileID: 6943639595967141426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3534640998098987545}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WildHorse
   m_TagString: Untagged
   m_Icon: {fileID: 0}

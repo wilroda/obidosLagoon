@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5956551096385592176}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hedgehog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4269260127800554674}
   - component: {fileID: 7824137063361314474}
   - component: {fileID: 4560502528483861596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

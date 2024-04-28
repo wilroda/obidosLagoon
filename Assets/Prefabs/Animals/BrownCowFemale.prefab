@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7598747367268216666}
   - component: {fileID: 3913965882290254462}
   - component: {fileID: 6104447287220892036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt578
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1250906748143071329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrownCowFemale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

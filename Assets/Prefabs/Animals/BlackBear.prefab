@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6017355354622330662}
   - component: {fileID: 6834337020567727630}
   - component: {fileID: 3343597169531114292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt575
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 677395553626191553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlackBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}

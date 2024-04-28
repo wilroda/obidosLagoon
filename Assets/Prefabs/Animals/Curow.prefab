@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3452445912380464459}
   - component: {fileID: 5055985170817705143}
   - component: {fileID: 4853585615059791555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4440423262305126422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Curow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

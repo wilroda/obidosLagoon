@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3373485938435702924}
   - component: {fileID: 7412072203593802234}
   - component: {fileID: 6812297809966348222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7366626736393100749}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PrayingMantis
   m_TagString: Untagged
   m_Icon: {fileID: 0}

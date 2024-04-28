@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5726193632841049543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 639188043224374907}
   - component: {fileID: 7837870451098416216}
   - component: {fileID: 9165310751191159562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

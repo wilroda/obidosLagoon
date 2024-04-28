@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6689054832589279935}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeathStalkerScorpion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7429884057428600452}
   - component: {fileID: 3815821870568616038}
   - component: {fileID: 3814710908202150336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

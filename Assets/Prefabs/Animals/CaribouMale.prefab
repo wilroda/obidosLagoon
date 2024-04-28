@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2830693126375863594}
   - component: {fileID: 6785280072690560125}
   - component: {fileID: 5820908874492986961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt610
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6502330494662747028}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CaribouMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4924273869304272157}
   - component: {fileID: 5441972996801274088}
   - component: {fileID: 7492542399986306050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5816485944001365367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rabbit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

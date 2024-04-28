@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2913096717399747593}
   - component: {fileID: 2798691278295822904}
   - component: {fileID: 8489399341696699055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1596677998460201030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alpaca
   m_TagString: Untagged
   m_Icon: {fileID: 0}

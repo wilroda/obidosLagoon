@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7809475789463757744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Millipede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3222415463008409334}
   - component: {fileID: 2315649499102524533}
   - component: {fileID: 3785566807315372213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

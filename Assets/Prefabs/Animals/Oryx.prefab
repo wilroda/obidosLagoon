@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6308714339305270810}
   - component: {fileID: 3256958388191398433}
   - component: {fileID: 6890585801252038231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8114038334583223639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Oryx
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4618778443623754942}
   - component: {fileID: 5920965648503104529}
   - component: {fileID: 8635067639440860956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt585
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5031116692679299174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeerFemale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5440024819979473369}
   - component: {fileID: 7338933325314549633}
   - component: {fileID: 6965684528692339065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GreenFrog
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2254559785850173339}
   - component: {fileID: 6360197893658846942}
   - component: {fileID: 671224744398902215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8651732492531085637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bison
   m_TagString: Untagged
   m_Icon: {fileID: 0}

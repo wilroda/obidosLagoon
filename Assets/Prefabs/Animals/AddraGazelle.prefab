@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987315908901974304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AddraGazelle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4056281351385636152}
   - component: {fileID: 1469402222240212176}
   - component: {fileID: 6781292159053034412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

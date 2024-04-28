@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7605752905454886970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlackPanther
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3438063576037369735}
   - component: {fileID: 4005435594576582772}
   - component: {fileID: 396305142957780186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

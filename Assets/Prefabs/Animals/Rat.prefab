@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9060504114576833183}
   - component: {fileID: 7527752141765487590}
   - component: {fileID: 8734195987807551618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2137104344017048230}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7681612472880518329}
   - component: {fileID: 6975149666914511159}
   - component: {fileID: 4122478443240227534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt583
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8854181050318040065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HolsteinCowFemale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

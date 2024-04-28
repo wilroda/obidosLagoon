@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3346029956620723274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PolarBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7903834641912251464}
   - component: {fileID: 5669364290619525079}
   - component: {fileID: 687152087496719699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

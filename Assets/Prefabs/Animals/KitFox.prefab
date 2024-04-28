@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6781054389655408218}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KitFox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6707903721764793294}
   - component: {fileID: 8654074421555014083}
   - component: {fileID: 3131086814262334885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

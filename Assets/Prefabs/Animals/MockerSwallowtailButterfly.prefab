@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 210943272351592492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MockerSwallowtailButterfly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3467936096331850541}
   - component: {fileID: 967429520732805836}
   - component: {fileID: 3763122254505034337}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

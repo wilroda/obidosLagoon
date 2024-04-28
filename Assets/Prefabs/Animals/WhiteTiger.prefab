@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7735747300287756864}
   - component: {fileID: 6451644909649613828}
   - component: {fileID: 5535104972367070149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1384836062221434241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WhiteTiger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

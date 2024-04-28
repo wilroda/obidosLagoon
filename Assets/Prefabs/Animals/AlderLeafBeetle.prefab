@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8490171065988504726}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AlderLeafBeetle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3728673145319146811}
   - component: {fileID: 5125332992791141464}
   - component: {fileID: 7088135663355362361}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

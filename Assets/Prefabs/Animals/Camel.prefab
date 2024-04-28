@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1901632557411872994}
   - component: {fileID: 4305555100644606126}
   - component: {fileID: 6595761207684218732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4244383324038065729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Camel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

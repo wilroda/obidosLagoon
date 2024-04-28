@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7175373122730992624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BighornSheepGrey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5849192329335413343}
   - component: {fileID: 6428305436815714360}
   - component: {fileID: 4615679463786738360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt606
   m_TagString: Untagged
   m_Icon: {fileID: 0}

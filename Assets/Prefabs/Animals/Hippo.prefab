@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2919710061405089800}
   - component: {fileID: 5593255612246180738}
   - component: {fileID: 6794013390810315679}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4742871748465087618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hippo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

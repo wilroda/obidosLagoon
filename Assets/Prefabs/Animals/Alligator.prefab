@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2465636003908236856}
   - component: {fileID: 8109382220555230321}
   - component: {fileID: 1418360826659872531}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5907972181336462297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Alligator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7950670614555504559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GoldenStagBeetle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7039653224969239086}
   - component: {fileID: 5990734619971339417}
   - component: {fileID: 7503622126108788657}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

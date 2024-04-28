@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6821115243138417883}
   - component: {fileID: 1972631695376551691}
   - component: {fileID: 5072730264709157639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2320044172491877177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wildebeest
   m_TagString: Untagged
   m_Icon: {fileID: 0}

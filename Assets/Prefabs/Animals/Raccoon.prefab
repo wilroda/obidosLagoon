@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4790611706205765620}
   - component: {fileID: 7616802830058613501}
   - component: {fileID: 2228803679738381909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 706525992157680585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Raccoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

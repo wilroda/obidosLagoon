@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4635083099423635820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rhino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 9152949987755594610}
   - component: {fileID: 2008001026134495225}
   - component: {fileID: 1041829569553227206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

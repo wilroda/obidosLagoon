@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 116461756765441119}
   - component: {fileID: 7567457560446996572}
   - component: {fileID: 8120304474013464920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7432859175689916165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Penguin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

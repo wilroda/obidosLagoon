@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4106209662209436787}
   - component: {fileID: 5479287140041271235}
   - component: {fileID: 5610475658492965534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6550161573849809499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zebra
   m_TagString: Untagged
   m_Icon: {fileID: 0}

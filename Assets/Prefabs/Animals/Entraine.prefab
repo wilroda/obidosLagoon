@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7877621912206367280}
   - component: {fileID: 7784931556458447704}
   - component: {fileID: 7907378795410675139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4182854311077353660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Entraine
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8891471035923557728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LlamaBrown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 9129478236364763595}
   - component: {fileID: 1986991548185846462}
   - component: {fileID: 8389422452370939946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt600
   m_TagString: Untagged
   m_Icon: {fileID: 0}

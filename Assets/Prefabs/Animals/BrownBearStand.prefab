@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093101821531793819}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BrownBearStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 599229856753091068}
   - component: {fileID: 3513813873021393905}
   - component: {fileID: 3691566258538805262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt576
   m_TagString: Untagged
   m_Icon: {fileID: 0}

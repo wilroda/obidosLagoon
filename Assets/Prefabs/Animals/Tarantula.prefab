@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5672624494082508068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tarantula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1764895065070910973}
   - component: {fileID: 1565404658202893692}
   - component: {fileID: 5489449198052915035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

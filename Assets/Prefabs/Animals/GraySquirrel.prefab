@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8691779067745915930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GraySquirrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 36354160173452690}
   - component: {fileID: 2681623433765150136}
   - component: {fileID: 1682261554049866524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt589
   m_TagString: Untagged
   m_Icon: {fileID: 0}

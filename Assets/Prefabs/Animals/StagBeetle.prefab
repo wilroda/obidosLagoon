@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1963234525456800162}
   - component: {fileID: 6851359086298800108}
   - component: {fileID: 1933376411131404011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5457156570253668381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StagBeetle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1990545323189446661}
   - component: {fileID: 6415729859141196219}
   - component: {fileID: 8769582688862014029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Toad
   m_TagString: Untagged
   m_Icon: {fileID: 0}

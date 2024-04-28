@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1464569888681708336}
   - component: {fileID: 4021766945905641738}
   - component: {fileID: 3015019619583040671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt615
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4341645315059841914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WildDuckMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4647461569458061723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Anteater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7016064736741193941}
   - component: {fileID: 1120105630900174820}
   - component: {fileID: 1259422358295794652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

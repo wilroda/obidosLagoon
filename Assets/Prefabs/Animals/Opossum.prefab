@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2685874064283405209}
   - component: {fileID: 215238233714567492}
   - component: {fileID: 7660690412768179015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3799505742604428022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Opossum
   m_TagString: Untagged
   m_Icon: {fileID: 0}

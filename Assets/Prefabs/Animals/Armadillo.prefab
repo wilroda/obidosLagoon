@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4496638764797237871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armadillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6872944700158796212}
   - component: {fileID: 797447674631812600}
   - component: {fileID: 1010921038847049953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

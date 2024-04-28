@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9113171972673601145}
   - component: {fileID: 6883321412540412639}
   - component: {fileID: 5217214196239714664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4189432810139076141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DrosophilaMelanogaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}

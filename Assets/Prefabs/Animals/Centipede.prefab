@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1167258500432040933}
   - component: {fileID: 1135719886863642811}
   - component: {fileID: 4833566349299430592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3517336270423626290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Centipede
   m_TagString: Untagged
   m_Icon: {fileID: 0}

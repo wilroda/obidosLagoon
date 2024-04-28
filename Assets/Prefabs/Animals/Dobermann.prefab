@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4103511739464875524}
   - component: {fileID: 2188214856496947921}
   - component: {fileID: 5887450095853189703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4558818902876860174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dobermann
   m_TagString: Untagged
   m_Icon: {fileID: 0}

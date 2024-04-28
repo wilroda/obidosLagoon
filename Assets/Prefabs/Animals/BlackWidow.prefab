@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3626690700819105126}
   - component: {fileID: 8372685498943877979}
   - component: {fileID: 4782969545025260138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5371842163079524852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlackWidow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

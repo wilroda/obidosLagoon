@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6608744741283832315}
   - component: {fileID: 1883057028433451604}
   - component: {fileID: 1953439187564594166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1795516286699376736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ArcticTern
   m_TagString: Untagged
   m_Icon: {fileID: 0}

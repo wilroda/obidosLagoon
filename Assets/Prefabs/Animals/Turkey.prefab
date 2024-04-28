@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6025804525034213970}
   - component: {fileID: 2424379614972992780}
   - component: {fileID: 1959148330738631600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 253355716453136205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turkey
   m_TagString: Untagged
   m_Icon: {fileID: 0}

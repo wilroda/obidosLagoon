@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7057680676298830045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mosquito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 563010797643961305}
   - component: {fileID: 6388965414725154807}
   - component: {fileID: 5484825210426820857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

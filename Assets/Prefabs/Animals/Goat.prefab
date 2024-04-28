@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2635680324825424296}
   - component: {fileID: 6670087020420345165}
   - component: {fileID: 809156607812889227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3922155597502717286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

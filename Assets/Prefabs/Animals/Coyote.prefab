@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1766878144333110827}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coyote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7920008193975673510}
   - component: {fileID: 8031234540269604303}
   - component: {fileID: 8754339944957082391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

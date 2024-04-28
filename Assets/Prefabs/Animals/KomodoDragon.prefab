@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2514073000994924689}
   - component: {fileID: 202612786442133719}
   - component: {fileID: 5064892405680014326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3085678191479002880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KomodoDragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

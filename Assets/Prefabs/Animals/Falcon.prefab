@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6953667956161095578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Falcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1396341778785987713}
   - component: {fileID: 7226502352242837288}
   - component: {fileID: 2047968156677986392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

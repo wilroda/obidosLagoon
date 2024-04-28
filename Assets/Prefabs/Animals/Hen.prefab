@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1023010313434128463}
   - component: {fileID: 2435867029119039747}
   - component: {fileID: 2532607936413069900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt612
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6245641427508343419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hen
   m_TagString: Untagged
   m_Icon: {fileID: 0}

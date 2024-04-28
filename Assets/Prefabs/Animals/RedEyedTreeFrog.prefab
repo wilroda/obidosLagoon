@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7119775723958680994}
   - component: {fileID: 4492006180976471294}
   - component: {fileID: 9195289867935180182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RedEyedTreeFrog
   m_TagString: Untagged
   m_Icon: {fileID: 0}

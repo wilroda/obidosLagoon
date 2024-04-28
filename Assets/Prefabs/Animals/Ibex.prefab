@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1152342027265002863}
   - component: {fileID: 7382196721851725781}
   - component: {fileID: 3754964059190850867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6792135870348045558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ibex
   m_TagString: Untagged
   m_Icon: {fileID: 0}

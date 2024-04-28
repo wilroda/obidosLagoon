@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6304369768896808630}
   - component: {fileID: 3405322521029872166}
   - component: {fileID: 5777743475386133585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5918988400577370387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Otter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

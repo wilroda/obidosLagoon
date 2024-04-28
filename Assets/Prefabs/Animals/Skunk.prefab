@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5721742816116793923}
   - component: {fileID: 3836211217805179592}
   - component: {fileID: 8828793168295695221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1411341661749503411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Skunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

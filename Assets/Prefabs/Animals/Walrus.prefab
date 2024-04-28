@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838312850726503555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walrus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6517331852151427043}
   - component: {fileID: 3598934587576888734}
   - component: {fileID: 3849593610564677031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

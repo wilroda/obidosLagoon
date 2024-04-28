@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3162169593879792780}
   - component: {fileID: 5988414247154146740}
   - component: {fileID: 1736920893077810362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4984952957713556497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tortoise
   m_TagString: Untagged
   m_Icon: {fileID: 0}

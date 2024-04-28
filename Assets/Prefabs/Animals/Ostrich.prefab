@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4879504109949852274}
   - component: {fileID: 2557441157529633952}
   - component: {fileID: 2923570606119766419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8569829619690205873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ostrich
   m_TagString: Untagged
   m_Icon: {fileID: 0}

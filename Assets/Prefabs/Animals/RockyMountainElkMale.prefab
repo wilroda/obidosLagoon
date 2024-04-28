@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2055216812942439352}
   - component: {fileID: 7248072140656827324}
   - component: {fileID: 8228904216661416132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt608
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5652040635464171334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RockyMountainElkMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

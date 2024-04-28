@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5594961746312557234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6349433004089549886}
   - component: {fileID: 3423316293431100537}
   - component: {fileID: 3625956196886441555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

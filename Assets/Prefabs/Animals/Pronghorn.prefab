@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4829314843198658726}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pronghorn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2212836957983573773}
   - component: {fileID: 2217222477903709005}
   - component: {fileID: 1543048730350170346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

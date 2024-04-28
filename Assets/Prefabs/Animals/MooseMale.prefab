@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3719754725211845026}
   - component: {fileID: 6832984536375367695}
   - component: {fileID: 7239767833875232624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt598
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8853627585726069590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MooseMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}

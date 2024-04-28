@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2811392494705096450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ArcticHare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8762979536342848939}
   - component: {fileID: 5147475998477530361}
   - component: {fileID: 8126355322996082786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

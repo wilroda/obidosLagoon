@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 960264547043876703}
   - component: {fileID: 9139667945698022451}
   - component: {fileID: 379536671588293639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 3132024201922893031}
   - component: {fileID: 2964332909162263979}
   - component: {fileID: 3207549667472819574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2162415857307257978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grasshopper
   m_TagString: Untagged
   m_Icon: {fileID: 0}

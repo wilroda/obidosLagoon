@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8292059891443170705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KoalaBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7896022167661328391}
   - component: {fileID: 8106231996359164894}
   - component: {fileID: 2183675615214185129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

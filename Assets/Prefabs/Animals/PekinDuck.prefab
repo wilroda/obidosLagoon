@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 607961045275001373}
   - component: {fileID: 7407853598400098173}
   - component: {fileID: 2300959056967564120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9055244932414692962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PekinDuck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7347402846033566649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7355258742590407189}
   - component: {fileID: 2053170261172707900}
   - component: {fileID: 1113093947671255645}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

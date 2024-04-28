@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2309014008358194114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WoolyMammoth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 614022214580189616}
   - component: {fileID: 8719478681473228878}
   - component: {fileID: 1757622308603192104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

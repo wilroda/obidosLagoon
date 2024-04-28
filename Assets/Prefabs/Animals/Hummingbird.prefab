@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91046144126548078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hummingbird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6153448152071303804}
   - component: {fileID: 8972137328584305628}
   - component: {fileID: 6076007292600562964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

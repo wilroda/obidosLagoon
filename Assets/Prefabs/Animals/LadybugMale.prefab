@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2195686769864556052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LadybugMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7722051808704993066}
   - component: {fileID: 8182546690889740565}
   - component: {fileID: 9114924096474468494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

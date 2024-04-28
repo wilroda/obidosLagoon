@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7173002465148072077}
   - component: {fileID: 6777099120002843867}
   - component: {fileID: 587944003884413156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8492818120786581829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Greyhound
   m_TagString: Untagged
   m_Icon: {fileID: 0}

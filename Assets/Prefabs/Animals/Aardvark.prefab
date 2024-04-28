@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1618978903790718106}
   - component: {fileID: 3998070652317759976}
   - component: {fileID: 8262421116368842281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7578681756626255507}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Aardvark
   m_TagString: Untagged
   m_Icon: {fileID: 0}

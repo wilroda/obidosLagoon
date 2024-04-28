@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3047701859936200424}
   - component: {fileID: 1812615878090535248}
   - component: {fileID: 7028176248062398448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8131451510523611748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PeacockMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7436294775469089242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 1988031721483486108}
   - component: {fileID: 313545240886688921}
   - component: {fileID: 7811494285559503128}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DblSided
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1144807809230859082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GraySquirrelStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4742137177816223385}
   - component: {fileID: 5926488195064992080}
   - component: {fileID: 3077389643814574682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt588
   m_TagString: Untagged
   m_Icon: {fileID: 0}

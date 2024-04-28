@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4892326712201325081}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlueMorphoButterfly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2746501985343838154}
   - component: {fileID: 8505895438117323783}
   - component: {fileID: 9189179649420702537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3799619768722268019}
   - component: {fileID: 6207322216767714238}
   - component: {fileID: 8880513793146007981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5132807343411197191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mandrill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

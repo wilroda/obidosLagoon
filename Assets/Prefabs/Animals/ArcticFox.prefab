@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4142433467618390975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ArcticFox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3327107016570537991}
   - component: {fileID: 3945659256839661067}
   - component: {fileID: 2619182694650394100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

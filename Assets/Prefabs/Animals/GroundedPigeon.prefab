@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8519151862855707747}
   - component: {fileID: 7498812796461886914}
   - component: {fileID: 3207845181212378101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4616822133737821688}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundedPigeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

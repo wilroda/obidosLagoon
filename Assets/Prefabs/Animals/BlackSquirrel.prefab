@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7892811464323946948}
   - component: {fileID: 8817816060036352227}
   - component: {fileID: 5413436421807175143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt591
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5475867243051226398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BlackSquirrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

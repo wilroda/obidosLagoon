@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4270596114194953168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SnowLeopard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3090361607551537373}
   - component: {fileID: 7214999590498858441}
   - component: {fileID: 3299276746352612452}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

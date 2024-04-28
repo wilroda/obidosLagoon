@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6797394620169373359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PalominoHorse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2162877634836571077}
   - component: {fileID: 7463976249847461250}
   - component: {fileID: 5083296049302041036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

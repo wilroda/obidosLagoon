@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4827796505237535562}
   - component: {fileID: 3947817284791190715}
   - component: {fileID: 5681837213281863213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8526620754889740704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Condor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

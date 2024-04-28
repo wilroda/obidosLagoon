@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9002724456259041417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeerMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5949242685886978630}
   - component: {fileID: 4878791893619596265}
   - component: {fileID: 8450730089840853690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: alt584
   m_TagString: Untagged
   m_Icon: {fileID: 0}

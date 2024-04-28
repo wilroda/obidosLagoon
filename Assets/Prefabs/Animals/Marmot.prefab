@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3714913023053794433}
   - component: {fileID: 933691229665881473}
   - component: {fileID: 4125830275911064427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5203938796785961807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Marmot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

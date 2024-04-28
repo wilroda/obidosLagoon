@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2345394565064715417}
   - component: {fileID: 8564745622666371295}
   - component: {fileID: 5353373758835398757}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3397038713474619996}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eagle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

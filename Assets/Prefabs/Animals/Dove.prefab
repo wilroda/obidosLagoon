@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8967580367862903089}
   - component: {fileID: 8937613101799200513}
   - component: {fileID: 6772924905550468198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1491835889243376668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dove
   m_TagString: Untagged
   m_Icon: {fileID: 0}

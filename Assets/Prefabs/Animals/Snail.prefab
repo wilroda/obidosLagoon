@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8221700201039504838}
   - component: {fileID: 3846852441162771303}
   - component: {fileID: 5926272608162434973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6375263142417556401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

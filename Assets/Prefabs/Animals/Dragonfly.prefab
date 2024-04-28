@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980773187283906499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dragonfly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8391551004698722226}
   - component: {fileID: 1048971703216276082}
   - component: {fileID: 557173412315077422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
