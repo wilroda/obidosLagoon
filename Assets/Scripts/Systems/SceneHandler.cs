@@ -40,4 +40,17 @@ public class SceneHandler : MonoBehaviour
             SceneManager.LoadScene(id);
         });
     }
+
+    public static void Quit()
+    {
+        Fader.FadeOut(0.5f, () =>
+        {
+            // Quit the application
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+        });
+    }
 }
