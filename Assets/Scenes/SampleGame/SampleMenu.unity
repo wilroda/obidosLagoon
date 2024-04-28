@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2899,6 +2899,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -2924,17 +2926,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
+  targetObject: {fileID: 0}
   waypoints:
   - {fileID: 555026441}
   mode: 0
   pauseBetweenWaypoints: {x: 0, y: 0}
   speed: 1
+  directionMode: 1
+  rotateSpeed: 360
   animationMode: 0
   animationSpeed: 0.25
   animationAmplitude: 0.1
@@ -7661,6 +7668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -7687,6 +7696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -10466,7 +10477,6 @@ GameObject:
   - component: {fileID: 915888584}
   - component: {fileID: 915888585}
   - component: {fileID: 915888586}
-  - component: {fileID: 915888587}
   m_Layer: 0
   m_Name: StartButton
   m_TagString: Untagged
@@ -10523,6 +10533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -10543,6 +10555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -10550,18 +10564,6 @@ MonoBehaviour:
   tokenConditions: []
   questConditions: []
   scene: SampleGame1
---- !u!114 &915888587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915888582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f7a4b2fc4e3bed469119d7c52fd8b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &931070383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17332,6 +17334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -19865,6 +19869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -20719,6 +20725,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 15
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -20744,6 +20752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
