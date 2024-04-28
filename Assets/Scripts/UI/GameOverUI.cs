@@ -29,7 +29,7 @@ public class GameOverUI : MonoBehaviour
     public void Exit()
     {
         if (canvasGroup.alpha < 1) return;
-        //
+        SceneHandler.GotoScene(0);
     }
 
     public void EnableGameOver(string reason)

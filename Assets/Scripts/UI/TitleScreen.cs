@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
@@ -27,4 +28,10 @@ public class TitleScreen : MonoBehaviour
         rect.DOScale(fullScale, timeToScaleUp);
         idleAnimation.enabled = true;
     }
+
+    public void ScaleDown()
+    {
+        rect.DOScale(0f, timeToScaleUp);
+    }
+
 }
