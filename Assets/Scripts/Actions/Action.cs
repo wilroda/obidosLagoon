@@ -98,7 +98,7 @@ public abstract class Action : MonoBehaviour
         return true;
     }
 
-    public bool canRun
+    public virtual bool canRun
     {
         get
         {

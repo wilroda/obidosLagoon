@@ -13,6 +13,8 @@ public class ActionMove : Action
 
     [HorizontalLine(color: EColor.Green)]
     [SerializeField]
+    private Transform       targetObject;
+    [SerializeField]
     private Transform[]     waypoints;
     [SerializeField]
     private Mode            mode = Mode.Click;
@@ -79,7 +81,12 @@ public class ActionMove : Action
 
     private void Start()
     {
-        target = transform;
+        if (targetObject == null)
+        {
+            targetObject = transform;
+        }
+
+        target = targetObject.transform;
 
         lastOffsetY = 0.0f;
 
@@ -95,9 +102,9 @@ public class ActionMove : Action
 
         float distanceMoved = 0.0f;
 
-        Quaternion rotation = transform.rotation;
+        Quaternion rotation = targetObject.transform.rotation;
 
-        Vector3 pos = transform.position;
+        Vector3 pos = targetObject.transform.position;
         pos.y -= lastOffsetY;
 
         Vector3 targetPos = target.position;
@@ -135,7 +142,7 @@ public class ActionMove : Action
                 pos.y = GetGroundY(pos);
             }
 
-            if (mode == Mode.Auto)
+            if ((mode == Mode.Auto) && (canRun))
             {
                 pauseTimer -= Time.deltaTime;
                 if (pauseTimer < 0.0f)
@@ -144,8 +151,9 @@ public class ActionMove : Action
                     if (CheckConditions())
                     {
                         NextWaypoint();
+
+                        pauseTimer = Random.Range(pauseBetweenWaypoints.x, pauseBetweenWaypoints.y);
                     }
-                    pauseTimer = Random.Range(pauseBetweenWaypoints.x, pauseBetweenWaypoints.y);
                 }
             }
         }
@@ -186,7 +194,7 @@ public class ActionMove : Action
             if (followGround)
             {
                 // Get ground
-                pos.y = GetGroundY(transform.position) + Mathf.Abs(Mathf.Sin(movementAngle)) * animationAmplitude;
+                pos.y = GetGroundY(targetObject.transform.position) + Mathf.Abs(Mathf.Sin(movementAngle)) * animationAmplitude;
             }
             else
             {
@@ -205,7 +213,7 @@ public class ActionMove : Action
         switch (directionMode)
         {
             case DirectionMode.None:
-                rotation = transform.rotation;
+                rotation = targetObject.transform.rotation;
                 break;
             case DirectionMode.Movement:
                 // Already set before, nothing to do here
@@ -218,8 +226,8 @@ public class ActionMove : Action
                 break;
         }
 
-        transform.position = pos;
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, Time.deltaTime * rotateSpeed);
+        targetObject.transform.position = pos;
+        targetObject.transform.rotation = Quaternion.RotateTowards(targetObject.transform.rotation, rotation, Time.deltaTime * rotateSpeed);
     }
 
     float GetGroundY(Vector3 p)
@@ -255,15 +263,27 @@ public class ActionMove : Action
         return true;
     }
 
+    public override bool canRun
+    {
+        get
+        {
+            Vector3 targetPos = target.position;
+            targetPos.y = GetGroundY(targetPos);
+
+            float distance = GetDistance(targetPos, targetObject.transform.position);
+            if (distance > 1e-3) return false;
+            if (directionMode != DirectionMode.None)
+            {
+                float angle = Quaternion.Angle(target.rotation, targetObject.transform.rotation);
+                if (angle > 1e-3) return false;
+            }
+
+            return base.canRun;
+        }
+    }
+
     void NextWaypoint()
     {
-        // Still moving, can't move again before we're done
-        Vector3 targetPos = target.position;
-        targetPos.y = GetGroundY(targetPos);
-
-        float distance = GetDistance(targetPos, transform.position);
-        if (distance > 1e-3) return;
-
         Transform   prevTarget = target;
         int         prevWaypointIndex = waypointIndex;
         bool        end = false;
@@ -290,18 +310,18 @@ public class ActionMove : Action
 
         if (directionMode == DirectionMode.InterpolateOverTime)
         {
-            float dist = Vector3.Distance(transform.position, target.position);
+            float dist = Vector3.Distance(targetObject.transform.position, target.position);
             if (dist > 1e-6)
             {
-                float angle = Quaternion.Angle(transform.rotation, target.rotation);
-                rotateSpeed = (angle * speed) / Vector3.Distance(transform.position, target.position);
+                float angle = Quaternion.Angle(targetObject.transform.rotation, target.rotation);
+                rotateSpeed = (angle * speed) / Vector3.Distance(targetObject.transform.position, target.position);
             }
         }
 
         if ((checkCollisions) && (!end))
         {
             // Check if there's a collision between the current position and the next one
-            var pos = transform.position + Vector3.up * 0.1f;
+            var pos = targetObject.transform.position + Vector3.up * 0.1f;
             var dest = target.position;
             dest.y = GetGroundY(dest) + 0.1f;
             var dir = dest - pos;
@@ -311,7 +331,7 @@ public class ActionMove : Action
             var hits = Physics.RaycastAll(pos, dir, maxDist, InteractionManager.GetLayerMask(), QueryTriggerInteraction.Collide);
             foreach (var h in hits)
             {
-                if (IsChild(h.collider.gameObject, gameObject)) continue;
+                if (IsChild(h.collider.gameObject, targetObject.gameObject)) continue;
 
                 // Found an intersection not with himself, can't move for now!
                 target = prevTarget;
@@ -319,7 +339,7 @@ public class ActionMove : Action
 
                 if (displayTextOnCollision != "")
                 {
-                    SpeechManager.Say(transform, displayTextOnCollision, textBackground, textColor, textDuration, textOffsetY, true);
+                    SpeechManager.Say(targetObject.transform, displayTextOnCollision, textBackground, textColor, textDuration, textOffsetY, true);
                 }
                 return;
             }
@@ -348,7 +368,10 @@ public class ActionMove : Action
 
         Gizmos.color = Color.yellow;
 
-        Vector3 oldPos = transform.position;
+        Transform targetTransform = transform;
+        if (targetObject != null) targetTransform = targetObject;
+
+        Vector3 oldPos = targetTransform.position;
         foreach (var t in waypoints)
         {
             Gizmos.DrawLine(oldPos, t.position);
