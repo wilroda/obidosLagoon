@@ -1597,6 +1597,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 1
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -1639,6 +1641,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 13
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -1647,6 +1651,7 @@ MonoBehaviour:
   questConditions:
   - state: 3
     quest: {fileID: 11400000, guid: f8da959fb53f8fc48bdc10d968a28775, type: 2}
+  targetObject: {fileID: 0}
   waypoints:
   - {fileID: 1994451881}
   - {fileID: 1476210208}
@@ -1656,6 +1661,8 @@ MonoBehaviour:
   mode: 0
   pauseBetweenWaypoints: {x: 0, y: 0}
   speed: 1
+  directionMode: 1
+  rotateSpeed: 360
   animationMode: 1
   animationSpeed: 0.25
   animationAmplitude: 0.1
@@ -7059,13 +7066,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
   interactionPitch: {x: 1, y: 1}
   tokenConditions: []
   questConditions: []
-  scene: SampleGame1
+  scene: SampleMenu
 --- !u!1001 &625219266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8911,6 +8920,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -8934,6 +8945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -8991,6 +9004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -9015,6 +9030,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -13567,6 +13584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -13589,6 +13608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -13609,6 +13630,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -14609,7 +14632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 936
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -14617,7 +14640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14673,7 +14696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960.00006
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16780,6 +16803,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -16805,6 +16830,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -16847,6 +16874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -17561,6 +17590,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -17763,6 +17794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 14
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -18076,6 +18109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 1
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 2
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -18103,6 +18138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 2
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -18127,6 +18164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 2
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -19155,6 +19194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 16
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -19177,6 +19218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -19350,6 +19393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 16
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
@@ -19371,6 +19416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canRetrigger: 0
+  cooldown: 0
+  cooldownTimer: 0
   cursor: 0
   interactionSound: {fileID: 0}
   interactionVolume: {x: 1, y: 1}
