@@ -59,14 +59,16 @@ public class IdleAnimation : MonoBehaviour
 
     IEnumerator ScalingUp()
     {
-        transform.DOScale(originalScale * Random.Range(maxScale, maxScale - 0.5f), animationSpeed);
+        transform.DOScale(maxScale, animationSpeed);
+        // transform.DOScale(originalScale * Random.Range(maxScale, maxScale - 0.5f), animationSpeed);
         yield return new WaitForSeconds(timeBetweenScaleIntervals);
         scaleDown = true;
     }
 
     IEnumerator ScalingDown()
     {
-        transform.DOScale(originalScale * Random.Range(minScale, minScale - 0.5f), animationSpeed);
+        transform.DOScale(minScale, animationSpeed); 
+        // transform.DOScale(originalScale * Random.Range(minScale, minScale - 0.5f), animationSpeed);
         yield return new WaitForSeconds(timeBetweenScaleIntervals);
         scaleUp = true;
     }
