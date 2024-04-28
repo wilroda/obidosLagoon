@@ -16986,8 +16986,8 @@ GameObject:
   - component: {fileID: 1924522014}
   - component: {fileID: 1924522017}
   - component: {fileID: 1924522016}
-  - component: {fileID: 1924522015}
   - component: {fileID: 1924522018}
+  - component: {fileID: 1924522015}
   m_Layer: 0
   m_Name: TitleScreen
   m_TagString: Untagged
@@ -17004,7 +17004,7 @@ RectTransform:
   m_GameObject: {fileID: 1924522013}
   m_LocalRotation: {x: -0.004281232, y: -0.014162775, z: 0.04316076, w: 0.99895865}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.337676, y: 0, z: 8.337676}
+  m_LocalScale: {x: 0, y: 0, z: 8.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1850116253}
@@ -17021,15 +17021,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924522013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 333a540d224f62a4b8662b22898b137f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationSpeed: 1
+  animationSpeed: 0.5
   timeBetweenScaleIntervals: 0.25
-  minScale: 8.337676
-  maxScale: 8.5
+  minScale: 8.5
+  maxScale: 9
   timeBetweenRotateIntervals: 0
   minRotation: 0
   maxRotation: 0
@@ -17083,6 +17083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d6f482b90ce3147b7db0ffd4facb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fullScale: 8.5
+  timeForTitleSCreenToAppear: 0.8
+  timeToScaleUp: 0.2
 --- !u!1001 &1924551922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19593,7 +19596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 936
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_SizeDelta.y
@@ -19601,7 +19604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5176834364699551277, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -19717,7 +19720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 6868596590348045762, guid: b04e46c1df144de4f94b53fe6f7d65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
