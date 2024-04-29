@@ -59,25 +59,23 @@ public class InteractionManager : MonoBehaviour
                 foreach (var h in hits)
                 {
                     var interactable = h.collider.GetComponent<ShowTooltip>();
-                    if ((interactable != null) && (interactable.CheckConditions()))
+                    if ((interactable != null) && (interactable.canRun) && (interactable.CheckConditions()))
                     {
                         string text = interactable.tooltip;
                         if ((text != "") && (text != null))
                         {
                             clearTooltip = false;
 
-                            if (interactable.tooltipIsSpeech)
+                            if (speechBubble == null)
                             {
-                                if (speechBubble == null)
-                                {
-                                    speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY, false);
-                                }
-                                else
-                                {
-                                    speechBubble.Set(h.transform, interactable.offsetY, mainCamera);
-                                    speechBubble.Set(text, interactable.bgColor, interactable.fgColor);
-                                }
+                                speechBubble = SpeechManager.Say(h.transform, text, interactable.bgColor, interactable.fgColor, float.MaxValue, interactable.offsetY, false);
                             }
+                            else
+                            {
+                                speechBubble.Set(h.transform, interactable.offsetY, mainCamera);
+                                speechBubble.Set(text, interactable.bgColor, interactable.fgColor);
+                            }
+                            interactable.Run();
                         }
                     }
 
