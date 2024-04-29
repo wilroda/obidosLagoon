@@ -1,28 +1,20 @@
-# obidosLagoon
-A game about the Óbidos Lagoon
+# Óbidos Lagoon
+A game kit about the Óbidos Lagoon
 
-# TODO
-    
-        
-**UI:**
-- Mission Accomplished Menu 
-- Start Menu
-- Level Selection Menu
+![image](title.png)
 
-**Animations:**
-- Using scripted tweens that can be added to objects and parameterized.
-- Text appears over time, instead of all at once
-- Show/Hide quest log with animation
+## Links
 
-**Sound:**
-- Level ambient sounds
-- Object find sound
-- Object click sound - sound the object makes on click
-- Object sound - a sound that the object emits from time to time?
-- Level Complete fanfare
-- Menu Music
-- Menu Clicks
+* [Sketchfab] - Free models
+* [FreePBR] - Free PBR materials
+* [FreeSounds] - Free sounds
+* [Dafont] - Free fonts
+* [Bfxr] - Sound generator
+* [Bosca Ceoil] - Music creator
 
-**Assets:**
-- Organize asset list
-- Setup easy to use prefabs from the current asset list
+[Sketchfab]:https://sketchfab.com/features/free-3d-models
+[FreeSounds]:https://freesound.org/
+[Dafont]:https://www.dafont.com/pt/
+[Bfxr]:https://www.bfxr.net/
+[Bosca Ceoil]:https://boscaceoil.net/
+[FreePBR]:https://freepbr.com/
