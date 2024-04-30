@@ -26,7 +26,10 @@ public class ActionPlayAnimations : Action
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 
 
